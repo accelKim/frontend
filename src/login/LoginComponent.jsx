@@ -1,32 +1,42 @@
-import React, {useState} from "react";
+import React from 'react';
+import AuthenticationService from '../loginService/AuthenticationService';
+import { useState } from 'react';
 import "./login.css"
-import axios from "axios";
 
-function Login() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
 
-    const handleLogin = async () => {
-        try {
-            const response = await fetch('http://http://localhost:8080/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email, password }),
-            });
+function LoginComponent(props) {
+    const [state, setState] = useState({
+        email: 'hch0821',
+        password: '',
+        hasLoginFailed: false,
+        showSuccessMessage: false
+    });
 
-            if (response.ok) {
-                // 로그인 성공 시 처리
-                console.log('로그인 성공');
-            } else {
-                // 로그인 실패 시 처리
-                console.error('로그인 실패');
-            }
-        } catch (error) {
-            console.error('로그인 요청 에러', error);
-        }
+    const handleChange = (event) => {
+        setState({
+            ...state,
+            [event.target.name]: event.target.value
+        });
     };
+
+    const loginClicked = () => {
+        AuthenticationService.executeBasicAuthenticationService(state.email, state.password)
+            .then(() => {
+                debugger;
+                AuthenticationService.registerSuccessfulLogin(state.email, state.password);
+                props.history.push('/courses')
+            }).catch(e => {
+            console.log(e);
+            setState(
+                {
+                    ...state,
+                    showSuccessMessage: false,
+                    hasLoginFailed: true
+                }
+            );
+        });
+    };
+
     return(
         <div className="index">
             <div className="overlap-wrapper">
@@ -85,8 +95,7 @@ function Login() {
                                        type={"email"}
                                        placeholder={"Enter email"}
                                        name={"input_email"}
-                                       value={email}
-                                       onChange={(e) => setEmail(e.target.value)}
+
                                 />
                             </div>
                             <div className="group-4">
@@ -96,13 +105,12 @@ function Login() {
                                         className={"overlap-3"}
                                         placeholder={"Enter password"}
                                         name={"input_pw"}
-                                        value={password}
-                                        onChange={(e) => setPassword(e.target.value)}
+
                                     />
                             </div>
                             <div className="text-wrapper-9">비밀번호를 잊으셨나요?</div>
                             <div className="overlap-group-wrapper">
-                                    <button type={"button"} className={"overlap-4"} onClick={handleLogin}>
+                                    <button type={"button"} className={"overlap-4"} >
                                         로그인
                                     </button>
 
@@ -130,4 +138,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default LoginComponent;
