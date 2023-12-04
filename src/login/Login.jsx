@@ -1,42 +1,8 @@
-import React from 'react';
-import AuthenticationService from '../loginService/AuthenticationService';
-import { useState } from 'react';
+import React, {useState} from "react";
 import "./login.css"
 
 
-function LoginComponent(props) {
-    const [state, setState] = useState({
-        email: 'hch0821',
-        password: '',
-        hasLoginFailed: false,
-        showSuccessMessage: false
-    });
-
-    const handleChange = (event) => {
-        setState({
-            ...state,
-            [event.target.name]: event.target.value
-        });
-    };
-
-    const loginClicked = () => {
-        AuthenticationService.executeBasicAuthenticationService(state.email, state.password)
-            .then(() => {
-                debugger;
-                AuthenticationService.registerSuccessfulLogin(state.email, state.password);
-                props.history.push('/courses')
-            }).catch(e => {
-            console.log(e);
-            setState(
-                {
-                    ...state,
-                    showSuccessMessage: false,
-                    hasLoginFailed: true
-                }
-            );
-        });
-    };
-
+function Login() {
     return(
         <div className="index">
             <div className="overlap-wrapper">
@@ -95,24 +61,22 @@ function LoginComponent(props) {
                                        type={"email"}
                                        placeholder={"Enter email"}
                                        name={"input_email"}
-
                                 />
                             </div>
                             <div className="group-4">
                                 <div className="text-wrapper-7">비밀번호</div>
-                                    <input
-                                        type={"password"}
-                                        className={"overlap-3"}
-                                        placeholder={"Enter password"}
-                                        name={"input_pw"}
-
-                                    />
+                                <input
+                                    type={"password"}
+                                    className={"overlap-3"}
+                                    placeholder={"Enter password"}
+                                    name={"input_pw"}
+                                />
                             </div>
                             <div className="text-wrapper-9">비밀번호를 잊으셨나요?</div>
                             <div className="overlap-group-wrapper">
-                                    <button type={"button"} className={"overlap-4"} >
-                                        로그인
-                                    </button>
+                                <button type={"button"} className={"overlap-4"} >
+                                    로그인
+                                </button>
 
                             </div>
                         </div>
@@ -138,4 +102,4 @@ function LoginComponent(props) {
     );
 }
 
-export default LoginComponent;
+export default Login;
