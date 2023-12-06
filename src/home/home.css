@@ -198,6 +198,7 @@
     height: 292px;
     position: relative;
     width: 292px;
+    
   }
   
   .home .frame-2 {
@@ -343,7 +344,7 @@
     width: 605.35px;
   }
   
-  .home .group-wrapper {
+  .home .banner {
     background-image: url(https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/nature-3289812-1920-2.png);
     background-position: 50% 50%;
     background-size: cover;
@@ -352,11 +353,42 @@
     width: 1280px;
   }
   
-  .home .group-5 {
+  .home .banner-cover {
+    background-color: rgba(3, 199, 68, 0.502);
+    border-radius: 25px;
+    height: 228px;
+  }
+  .home .banner-2 {
+    background-image: url(https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/nature-3289812-1920-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 230.89px;
+    position: relative;
+    width: 1280px;
+  }
+  
+  .home .banner-cover-2 {
+    background-color: #3703c780;
+    border-radius: 25px;
+    height: 228px;
+  }
+  
+  .home .banner-3 {
+    background-image: url(https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/nature-3289812-1920-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 230.89px;
+    position: relative;
+    width: 1280px;
+  }
+  
+  .home .banner-cover-3 {
     background-color: #c7030380;
     border-radius: 25px;
     height: 228px;
   }
+  
+  
   
   .home .text-wrapper-10 {
     color: #646464;
@@ -925,25 +957,30 @@
     width: 249px;
   }
   
-  .mission-frame {
-    height: 600px;
+  .home .mission-frame {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    max-height: 1200px;
+    max-width: 1220px;
     position: relative;
-    width: 1262px;
+    width: 100%;
+    
   }
   
-  .mission-frame .mission-box {
+  .home .mission-frame .mission-box {
     background-color: #ffffff;
     border: 1px solid;
     border-color: #000000;
-    margin: 25px;
     border-radius: 35px;
     height: 284px;
     position: relative;
-    top: 0;
     width: 284px;
+    
   }
   
-  .mission-frame .element {
+  .home .mission-frame .element {
     height: 194px;
     left: 14px;
     object-fit: cover;
@@ -952,9 +989,9 @@
     width: 251px;
   }
   
-  .mission-frame .text-wrapper {
+  .home .mission-frame .text-wrapper {
     color: #000000;
-    font-family: "Poppins", Helvetica;
+    font-family: "Poppins-SemiBold", Helvetica;
     font-size: 24px;
     font-weight: 600;
     left: 26px;
@@ -965,6 +1002,197 @@
     top: 230px;
     width: 227px;
   }
+  .gathering {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    max-height: 1200px;
+    max-width: 1250px;
+    position: relative;
+    width: 100%;
+  }
   
- 
+  .gathering .gathering-box {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 30px;
+    height: 164px;
+    position: relative;
+    width: 597.35px;
+  }
+  
+  .gathering .gathering-users {
+    height: 44px;
+    left: 190px;
+    position: absolute;
+    top: 100px;
+    width: 206px;
+  }
+  
+  .gathering .group {
+    height: 44px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 48px;
+  }
+  
+  .gathering .img {
+    height: 44px;
+    left: 41px;
+    position: absolute;
+    top: 0;
+    width: 48px;
+  }
+  
+  .gathering .group-2 {
+    height: 44px;
+    left: 80px;
+    position: absolute;
+    top: 0;
+    width: 48px;
+  }
+  
+  .gathering .group-3 {
+    height: 44px;
+    left: 121px;
+    position: absolute;
+    top: 0;
+    width: 48px;
+  }
+  
+  .gathering .group-4 {
+    height: 44px;
+    left: 159px;
+    position: absolute;
+    top: 0;
+    width: 48px;
+  }
+  
+  .gathering .text-wrapper {
+    color: #000000;
+    font-family: "Poppins", Helvetica;
+    font-size: 18px;
+    font-weight: 300;
+    left: 458px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 108px;
+    width: 51px;
+  }
+  
+  .gathering .text-wrapper-2 {
+    color: #000000;
+    font-family: "Poppins", Helvetica;
+    font-size: 18px;
+    font-weight: 300;
+    left: 198px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 34px;
+    width: 360px;
+  }
+  
+  .gathering .text-wrapper-3 {
+    color: #6f6f6f;
+    font-family: "Poppins", Helvetica;
+    font-size: 16px;
+    font-weight: 300;
+    left: 220px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 64px;
+    width: 277px;
+  }
+  
+  .gathering .overlap {
+    height: 20px;
+    left: 208px;
+    position: absolute;
+    top: 10px;
+    width: 63px;
+  }
+  
+  .gathering .gathering-rectangle {
+    background-color: #dedede;
+    border-radius: 30px;
+    height: 17px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 63px;
+  }
+  
+  .gathering .text-wrapper-4 {
+    color: #000000;
+    font-family: "Poppins", Helvetica;
+    font-size: 14px;
+    font-weight: 300;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 41px;
+  }
+  
+  .gathering .image {
+    height: 127px;
+    left: 10px;
+    object-fit: cover;
+    position: absolute;
+    top: 16px;
+    width: 164px;
+  }
+  
+
+  .gathering .text-wrapper-5 {
+    color: #000000;
+    font-family: "Poppins", Helvetica;
+    font-size: 18px;
+    font-weight: 300;
+    left: 458px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 117px;
+    width: 51px;
+  }
+  
+  .gathering .image-2 {
+    height: 127px;
+    left: 18px;
+    object-fit: cover;
+    position: absolute;
+    top: 17px;
+    width: 164px;
+  }
+  
+  .gathering .image-3 {
+    height: 127px;
+    left: 13px;
+    object-fit: cover;
+    position: absolute;
+    top: 16px;
+    width: 164px;
+  }
+  
+
+  
+  .gathering .image-4 {
+    height: 127px;
+    left: 16px;
+    object-fit: cover;
+    position: absolute;
+    top: 16px;
+    width: 164px;
+  }
   

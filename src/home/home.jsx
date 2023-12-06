@@ -51,8 +51,8 @@ import "./home.css";
         alt="Line"
         src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/line-28.png"
       />
-      <div className="frame">
-        <div className="cover" />
+      <div className="banner">
+        <div className="banner-cover" />
       </div>
       <div className="misson-title">진행중인 미션</div>
       <div className="overlap-wrapper">
@@ -147,12 +147,9 @@ import "./home.css";
       </div>
     </div>
       <div className="frame-2">
-        <img
-          className="nature"
-          alt="Nature"
-          src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/nature-3289812-1920-2-1.png"
-        />
-        <div className="cover-2" />
+      <div className="banner-2">
+        <div className="banner-cover-2" />
+      </div>
       </div>
       <div className="gathering-title">봉사모임</div>
       <div className="group-3">
@@ -183,38 +180,114 @@ import "./home.css";
         alt="Line"
         src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/line-18.png"
       />
-      <img
-        className="group-4"
-        alt="Group"
-        src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/group-273.png"
-      />
-      <img
-        className="group-4"
-        alt="Group"
-        src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/group-278.png"
-      />
-      <img
-        className="group-4"
-        alt="Group"
-        src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/group-275.png"
-      />
-      <img
-        className="group-4"
-        alt="Group"
-        src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/group-279.png"
-      />
-      <img
-        className="group-4"
-        alt="Group"
-        src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/group-277.png"
-      />
-      <img
-        className="group-4"
-        alt="Group"
-        src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/group-280.png"
-      />
-      <div className="group-wrapper">
-        <div className="group-5" />
+  
+  <div className="gathering">
+      <div className="gathering-box">
+        <div className="gathering-users">
+          <img className="group" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-322@2x.png" />
+          <img className="img" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-323@2x.png" />
+          <img className="group-2" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-324@2x.png" />
+          <img className="group-3" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-325@2x.png" />
+          <img className="group-4" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-326@2x.png" />
+        </div>
+        <div className="text-wrapper">14/20</div>
+        <div className="text-wrapper-2">오리역 봉사모임 입니다!</div>
+        <div className="text-wrapper-3">단기모임 / 11.26(일) 하루만</div>
+        <div className="overlap">
+          <div className="gathering-rectangle" />
+          <div className="text-wrapper-4">봉사</div>
+        </div>
+        <img className="image" alt="Image" src="https://c.animaapp.com/I8dUsI6G/img/image-2@2x.png" />
+      </div>
+      <div className="gathering-box">
+        <div className="gathering-users">
+          <img className="group" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-321@2x.png" />
+          <img className="img" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-320@2x.png" />
+          <img className="group-2" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-319@2x.png" />
+          <img className="group-3" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-318@2x.png" />
+          <img className="group-4" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-317@2x.png" />
+        </div>
+        <div className="text-wrapper-5">14/20</div>
+        <div className="text-wrapper-2">오리역 봉사모임 입니다!</div>
+        <div className="text-wrapper-3">단기모임 / 11.26(일) 하루만</div>
+        <div className="overlap">
+          <div className="gathering-rectangle" />
+          <div className="text-wrapper-4">봉사</div>
+        </div>
+        <img className="image-2" alt="Image" src="https://c.animaapp.com/I8dUsI6G/img/image-3@2x.png" />
+      </div>
+      <div className="gathering-box">
+        <div className="gathering-users">
+          <img className="group" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-331@2x.png" />
+          <img className="img" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-330@2x.png" />
+          <img className="group-2" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-329@2x.png" />
+          <img className="group-3" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-328@2x.png" />
+          <img className="group-4" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-327@2x.png" />
+        </div>
+        <div className="text-wrapper-5">14/20</div>
+        <div className="text-wrapper-2">오리역 봉사모임 입니다!</div>
+        <div className="text-wrapper-3">단기모임 / 11.26(일) 하루만</div>
+        <div className="overlap">
+          <div className="gathering-rectangle" />
+          <div className="text-wrapper-4">봉사</div>
+        </div>
+        <img className="image-3" alt="Image" src="https://c.animaapp.com/I8dUsI6G/img/image-1@2x.png" />
+      </div>
+      <div className="gathering-box">
+        <div className="gathering-users">
+          <img className="group" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-321@2x.png" />
+          <img className="img" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-320@2x.png" />
+          <img className="group-2" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-319@2x.png" />
+          <img className="group-3" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-318@2x.png" />
+          <img className="group-4" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-317@2x.png" />
+        </div>
+        <div className="text-wrapper-5">14/20</div>
+        <div className="text-wrapper-2">오리역 봉사모임 입니다!</div>
+        <div className="text-wrapper-3">단기모임 / 11.26(일) 하루만</div>
+        <div className="overlap">
+          <div className="gathering-rectangle" />
+          <div className="text-wrapper-4">봉사</div>
+        </div>
+        <img className="image-4" alt="Image" src="https://c.animaapp.com/I8dUsI6G/img/image-5@2x.png" />
+      </div>
+      <div className="gathering-box">
+        <div className="gathering-users">
+          <img className="group" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-336@2x.png" />
+          <img className="img" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-335@2x.png" />
+          <img className="group-2" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-334@2x.png" />
+          <img className="group-3" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-333@2x.png" />
+          <img className="group-4" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-332@2x.png" />
+        </div>
+        <div className="text-wrapper-5">14/20</div>
+        <div className="text-wrapper-2">오리역 봉사모임 입니다!</div>
+        <div className="text-wrapper-3">단기모임 / 11.26(일) 하루만</div>
+        <div className="overlap">
+          <div className="gathering-rectangle" />
+          <div className="text-wrapper-4">봉사</div>
+        </div>
+        <img className="image-4" alt="Image" src="https://c.animaapp.com/I8dUsI6G/img/image-6@2x.png" />
+      </div>
+      <div className="gathering-box">
+        <div className="gathering-users">
+          <img className="group" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-321@2x.png" />
+          <img className="img" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-320@2x.png" />
+          <img className="group-2" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-319@2x.png" />
+          <img className="group-3" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-318@2x.png" />
+          <img className="group-4" alt="Group" src="https://c.animaapp.com/I8dUsI6G/img/group-317@2x.png" />
+        </div>
+        <div className="text-wrapper-5">14/20</div>
+        <div className="text-wrapper-2">오리역 봉사모임 입니다!</div>
+        <div className="text-wrapper-3">단기모임 / 11.26(일) 하루만</div>
+        <div className="overlap">
+          <div className="gathering-rectangle" />
+          <div className="text-wrapper-4">봉사</div>
+        </div>
+        <img className="image-4" alt="Image" src="https://c.animaapp.com/I8dUsI6G/img/image-4@2x.png" />
+      </div>
+    </div>
+
+      <div className="banner-3">
+        <div className="banner-cover-3" />
       </div>
       <div className="text-wrapper-10">인기 펀딩 상품</div>
       <div className="group-6">

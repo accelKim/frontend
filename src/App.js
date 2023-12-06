@@ -1,21 +1,13 @@
-<<<<<<< HEAD
-import React from 'react';
-import './App.css';
-import Home from './home/home'
-import InstructorApp from './component/InstructorApp';
-=======
-import Login from './login/Login'
 
->>>>>>> parent of 872f0c6 (12.04)
+import React from 'react';
+
+import Home from './home/home'
+
 
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-      <InstructorApp />
-=======
-      <Login />
->>>>>>> parent of 872f0c6 (12.04)
+      <Home />
     </div>
   );
 }

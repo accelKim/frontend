@@ -4,7 +4,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import CreateAccountPage from './login/component/Auth/CreateAccountForm';
 import Layout from './login/component/Layout/Layout'
 import AuthPage from "./login/pages/AuthPage";
-
+import HomePage from './login/pages/HomePage';
 import ProfilePage from './login/pages/ProfilePage';
 import AuthContext from './login/store/auth-context';
 
@@ -15,7 +15,7 @@ function App() {
     return (
         <Layout>
             <Routes>
-                
+            <Route path="/" element={<HomePage />} />
                 <Route path="/signup/" element={authCtx.isLoggedIn ? <Navigate to='/' /> : <CreateAccountPage />} />
                 <Route path="/login/*"
                        element={authCtx.isLoggedIn ? <Navigate to='/' /> : <AuthPage />}
