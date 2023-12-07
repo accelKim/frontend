@@ -4,27 +4,27 @@
     display: flex;
     flex-wrap: wrap;
     gap: 42px 20px;
-    height: 4000px;
     justify-content: center;
     max-width: 1440px;
     position: relative;
     width: 100%;
+    margin: auto;
   }
   
-  .home .element {
+  .home .main-banner {
     height: 850px;
     object-fit: cover;
     position: relative;
     width: 1440px;
   }
   
-  .home .group {
+  .home .notice {
     height: 32px;
     position: relative;
     width: 109px;
   }
   
-  .home .overlap-group {
+  .home .overlap-notice {
     border-radius: 35px;
     height: 32px;
     position: relative;
@@ -48,7 +48,7 @@
     transform: rotate(-180deg);
   }
   
-  .home .text-wrapper {
+  .home .notice-title {
     color: #ffffff;
     font-family: "Inter", Helvetica;
     font-size: 18px;
@@ -63,12 +63,12 @@
     width: 72px;
   }
   
-  .home .notice {
+  .home .notice-text {
     color: #000000;
     font-family: "Inter", Helvetica;
     font-size: 20px;
     font-weight: 400;
-    height: 20px;
+    height: 24px;
     letter-spacing: -0.2px;
     position: relative;
     text-align: center;
@@ -84,9 +84,10 @@
     line-height: normal;
     position: relative;
     width: 300px;
+    text-align: center;
   }
   
-  .home .span {
+  .home .move-notice-detail-text {
     color: #03c75a;
     font-family: "Inter", Helvetica;
     font-size: 20px;
@@ -95,9 +96,7 @@
     line-height: 24px;
   }
   
-  .home .text-wrapper-2 {
-    font-size: 28px;
-  }
+
   
   .home .line {
     height: 1px;
@@ -674,24 +673,28 @@
     overflow-x: scroll;
     position: relative;
     width: 1225px;
-    scroll-behavior: smooth;
+    
   }
   .home .punding-scroll::-webkit-scrollbar{
     display:none;
   }
   
   
-  .home .NFT-grid {
+  .home .punding-grid {
     height: 433px;
     left: 0;
-    position: absolute;
+    position: relative;
     top: 0;
     width: 282px;
+    display: flex;
+    gap: 25px;
   }
   
-  .home .NFT-card {
+  .home .punding-card {
     height: 433px;
     width: 284px;
+    position: relative;
+    
   }
   
   .home .overlap-10 {
@@ -848,21 +851,9 @@
     width: 284px;
   }
   
-  .home .NFT-card-2 {
-    height: 433px;
-    left: 628px;
-    position: absolute;
-    top: 0;
-    width: 284px;
-  }
+ 
   
-  .home .NFT-card-3 {
-    height: 433px;
-    left: 936px;
-    position: absolute;
-    top: 0;
-    width: 284px;
-  }
+  
   
   .home .overlap-11 {
     border-radius: 18px;
@@ -940,13 +931,7 @@
     width: 282px;
   }
   
-  .home .NFT-card-4 {
-    height: 433px;
-    left: 1576px;
-    position: absolute;
-    top: 0;
-    width: 284px;
-  }
+  
   
   .home .nature-2 {
     height: 187px;
@@ -1003,7 +988,7 @@
     width: 227px;
   }
   .gathering {
-    align-items: flex-start;
+    
     display: flex;
     flex-wrap: wrap;
     gap: 20px 20px;
@@ -1068,7 +1053,7 @@
     left: 159px;
     position: absolute;
     top: 0;
-    width: 48px;
+    width: 48px; 
   }
   
   .gathering .text-wrapper {
@@ -1195,4 +1180,38 @@
     top: 16px;
     width: 164px;
   }
+
+  .home {
+    transform: scale(0.75);
+    height: 0;
+    margin-bottom: 3000px;
+   
+}
+@media (max-width:1235px) {
+  .home {
+    margin-bottom: 3700px;
+  }
+}
+@media (max-width:1135px) {
+  .home {
+    margin-bottom: 3850px;
+  }
+}
+
+@media (max-width:900px) {
+  .home {
+    margin-bottom: 4050px;
+  }
+}
+@media (max-width:800px) {
+  .home {
+    margin-bottom: 4150px;
+  }
+}
+@media (max-width:1235px) {
+  .gathering {
+    
+  }
+}
+
   
