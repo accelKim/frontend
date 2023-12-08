@@ -770,6 +770,7 @@
     display: inline-flex;
     flex: 0 0 auto;
     gap: 30px;
+    margin-bottom: 20px;
     position: relative;
   }
   

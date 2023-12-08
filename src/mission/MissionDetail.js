@@ -17,8 +17,8 @@ function MissionDetail() {
             <div className="header-menu">
               <div className="text-wrapper">봉사미션</div>
               <div className="text-wrapper">봉사모임</div>
-              <div className="reward">리워드</div>
-              <div className="funding">펀딩</div>
+              <div className="text-wrapper">리워드</div>
+              <div className="text-wrapper">펀딩</div>
               <div className="text-wrapper">고객지원</div>
             </div>
           </div>
@@ -30,7 +30,7 @@ function MissionDetail() {
         </div>
       </div>
       <div className="mission-detail-start">
-        <div className="div">
+        <div className="banner_div">
           <img
             className="mission-detail-start-2"
             alt="Mission detail start"
@@ -99,7 +99,7 @@ function MissionDetail() {
           </div>
         </div>
       </div>
-      <div className="midssion-detail">
+      <div className="more-mission">
         <div className="mission-list-another">
           <div className="mission-list-wrap">
             <div className="mission-frame">
