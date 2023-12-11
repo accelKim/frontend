@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import React  from "react";
 import axios from "axios";
+import Nav from 'react-bootstrap/Nav';
 import "./home.css";
 import MissionComponent from "./missionComponent";
 import GatheringComponent from "./gatheringComponent";
@@ -86,31 +87,25 @@ import PundingComponent from "./pundingComponent";
         <div className="banner-cover" />
       </div>
       <div className="misson-title">진행중인 미션</div>
-      <div className="overlap-wrapper">
-        <div className="overlap">
-          <div className="mission-category">
-            전체&nbsp;&nbsp;&nbsp;&nbsp;
-            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;활동형&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;참여형&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            도전형
-          </div>
-          <img
-            className="free-icon-heart"
-            alt="Free icon heart"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-heart-activity-11746818-1.png"
-          />
-          <img
-            className="free-icon-employee"
-            alt="Free icon employee"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-employee-engagement-12693665-1.png"
-          />
-          <img
-            className="free-icon-goal"
-            alt="Free icon goal"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-goal-3310109-1.png"
-          />
-        </div>
-      </div>
+        <Nav variant="phills" defaultActiveKey="#" className="nav-wrap">
+           <Nav.Item className="nav-box" >
+             <Nav.Link href="#" className="nav-text">전체</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+             <Nav.Link eventKey="link-1" href="#"className="nav-text">참여형</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+           <Nav.Link eventKey="link-2" href="#"className="nav-text">도전형</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+           <Nav.Link eventKey="link-3" href="#"className="nav-text">활동형</Nav.Link>
+           </Nav.Item>
+         </Nav>
+      <img
+        className="img"
+        alt="Line"
+        src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/line-18.png"
+      />
       <MissionComponent />
       <div className="frame-2">
       <div className="banner-2">
@@ -118,29 +113,20 @@ import PundingComponent from "./pundingComponent";
       </div>
       </div>
       <div className="gathering-title">봉사모임</div>
-      <div className="group-3">
-        <img
-          className="free-icon-volunteer"
-          alt="Free icon volunteer"
-          src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-volunteer-4742664-1.png"
-        />
-        <div className="gathering-category-1">전체&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</div>
-        <img
-          className="free-icon-waste"
-          alt="Free icon waste"
-          src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-waste-7867450-1.png"
-        />
-        <div className="gathering-category-2">환경미화&nbsp;&nbsp; |</div>
-        <div className="gathering-category-3">재능기부&nbsp;&nbsp; |</div>
-        <div className="overlap-2">
-          <img
-            className="free-icon-volunteer-2"
-            alt="Free icon volunteer"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-volunteer-779917-1.png"
-          />
-          <div className="gathering-category-4 ">기부모임</div>
-        </div>
-      </div>
+           <Nav variant="phills" defaultActiveKey="#" className="nav-wrap">
+           <Nav.Item className="nav-box" >
+             <Nav.Link href="#" className="nav-text">전체</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+             <Nav.Link eventKey="link-1" href="#"className="nav-text">환경미화</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+           <Nav.Link eventKey="link-2" href="#"className="nav-text">재능기부</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+           <Nav.Link eventKey="link-3" href="#"className="nav-text">후원</Nav.Link>
+           </Nav.Item>
+         </Nav>
       <img
         className="img"
         alt="Line"

@@ -10,6 +10,7 @@ import GatheringDetail from './gathering/GatheringDetail';
 import GatheringAdd from './gathering/GatheringAdd';
 import GatheringList from './gathering/GatheringList';
 import GatheringUpdate from './gathering/GatheringUpdate';
+import ErrorPage from './errorpage/ErrorPage'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/gathering/detail' element={<GatheringDetail />} />
           <Route path='/gathering/update' element={<GatheringUpdate />} />
           <Route path='/gathering/add' element={<GatheringAdd />} />
+          <Route path='*' element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );

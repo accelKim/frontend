@@ -131,12 +131,68 @@
   .mission-list-index .mission-middle-menu {
     align-items: center;
     display: flex;
-    gap: 10px;
-    height: 30px;
+    flex: 0 0 auto;
+    gap: 100px;
     justify-content: center;
     position: relative;
-    width: 1440px;
+    border-bottom: 1px solid black;
+    width: 1200px;
+    margin: 10px 0 80px 0;
   }
+  .mission-list-index .search-box {
+    background-color: #03c75a;
+    border: #03c75a;
+    border-radius: 25px;
+    flex: 0 0 auto;
+    position: relative;
+    width: 200px;
+    height: 35px;
+    z-index: -1;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+}
+.mission-list-index .middle-menu-search {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 50px;
+  justify-content: center;
+  position: relative;
+  width: 380px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.mission-list-index input::placeholder {
+  color: #ffffff;
+  text-align: center;
+}
+
+.mission-list-index .search-box:focus {
+  outline: none;
+  width: 200px;
+  text-align: center;
+}
+
+.mission-list-index .search-icon {
+  height: 24px;
+  left: 100px;
+  object-fit: cover;
+  position: absolute;
+  top: 14px;
+  width: 24px;
+}
+
+.mission-list-index select {
+  border-radius: 20px;
+  height: 35px;
+  width: 200px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
   
   .mission-list-index .menu-select {
     align-items: center;
@@ -343,7 +399,7 @@
     flex: 0 0 auto;
     flex-direction: column;
     gap: 10px;
-    height: 200px;
+    height: 245px;
     justify-content: space-around;
     overflow: hidden;
     padding: 20px 0px;
@@ -390,7 +446,7 @@
     position: relative;
     width: 150px;
     border-radius: 50%;
-    left: 15px;
+
   }
   
   .mission-list-index .my-profile-info-wrap {
@@ -643,7 +699,7 @@
     border-radius: 25px;
   }
   
-  .mission-list-index .main-image-wrap {
+  .mission-list-index .sub-banner-wrap {
     align-items: flex-start;
     display: flex;
     gap: 10px;
@@ -653,7 +709,7 @@
     height: 245px;
   }
   
-  .mission-list-index .main-image {
+  .mission-list-index .sub-banner {
     align-self: stretch;
     flex: 1;
     flex-grow: 1;
@@ -1126,3 +1182,11 @@
     width: 59px;
   }
   
+  .mission-list-index .nav-text {
+    color: #000000;
+    font-weight: 600;
+}
+.mission-list-index .nav-text.active {
+    color: #ffffff;
+    background-color: #03c75a;
+}

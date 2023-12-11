@@ -1214,4 +1214,20 @@
   }
 }
 
+.home .nav-text {
+  color: #000000;
+  font-weight: 600;
+  border-radius: 25px;
+}
+.home .nav-text.active {
+  color: #ffffff;
+  background-color: #03c75a;
+  border-radius: 25px;
+  width: 150px;
+  text-align: center;
+}
+.home .nav-wrap {
+  gap: 30px;
   
+}
+

@@ -3,7 +3,7 @@ import "../gathering/GatheringList.css";
 import {useState, useEffect} from "react";
 import axios from "axios";
 import {Link} from "react-router-dom";
-
+import Nav from 'react-bootstrap/Nav';
 
 function GatheringList() {
     const [gatherings, setGathering] = useState([]);
@@ -29,6 +29,7 @@ function GatheringList() {
 
     //네브바
 
+    
     return (
         <div className="gathering-index">
             <div className="div">
@@ -47,13 +48,21 @@ function GatheringList() {
                 </div>
             </div>
             <div className="middle-menu-wrap">
-            <nav class="tabs">
-    <div class="selector"></div>
-    <a href="#" class="active"><i class="fab fa-superpowers"></i>Avengers</a>
-    <a href="#"><i class="fas fa-hand-rock"></i>Hulk</a>
-    <a href="#"><i class="fas fa-bolt"></i>Thor</a>
-    <a href="#"><i class="fas fa-burn"></i>Marvel</a>
-  </nav>
+
+            <Nav variant="phills" defaultActiveKey="#">
+      <Nav.Item >
+        <Nav.Link href="#" className="nav-text">전체</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="link-1" href="#"className="nav-text">환경미화</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+      <Nav.Link eventKey="link-2" href="#"className="nav-text">재능기부</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+      <Nav.Link eventKey="link-3" href="#"className="nav-text">재능기부</Nav.Link>
+      </Nav.Item>
+    </Nav>
 
                 {/* <div className="middle-menu-blank" /> */}
                 <div className="middle-menu-search">

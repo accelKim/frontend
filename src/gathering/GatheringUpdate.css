@@ -32,11 +32,7 @@
     position: relative;
 }
 
-.gathering-update-index .header-icon-wrap {
-    margin-right: -6.3px;
-    position: relative;
-    width: 160.6px;
-}
+
 
 .gathering-update-index .gathering-update-form-wrap {
     align-items: flex-start;
