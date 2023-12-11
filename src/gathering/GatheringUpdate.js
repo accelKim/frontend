@@ -110,44 +110,6 @@ function GatheringUpdate() {
         <div className="gathering-update-index">
             <div className="add-wrap-wrapper">
                 <div className="add-wrap">
-                    <div className="header-wrap">
-                        <header className="header">
-                            <div className="header-logo-wrap">
-                                <div className="logo-wrap">
-                                    <div className="ellipse" />
-                                    <div className="ECO-CONNECT">
-                                        ECO
-                                        <br />
-                                        CONNECT
-                                    </div>
-                                    <img
-                                        className="icon-leaf"
-                                        alt="Icon leaf"
-                                        src="https://cdn.animaapp.com/projects/6560b21274de9042f7d947f4/releases/6567f295b8a0bf78ad4295d3/img/---icon--leaf-@2x.png"
-                                    />
-                                </div>
-                            </div>
-                            <div className="header-menu-wrap">
-                                <div className="header-mission-wrap">
-                                    <div className="text-wrapper">봉사미션</div>
-                                </div>
-                                <div className="div-wrapper">
-                                    <div className="text-wrapper">봉사모임</div>
-                                </div>
-                                <div className="div-wrapper">
-                                    <div className="text-wrapper">펀딩</div>
-                                </div>
-                                <div className="div-wrapper">
-                                    <div className="text-wrapper">고객지원</div>
-                                </div>
-                            </div>
-                            <img
-                                className="header-icon-wrap"
-                                alt="Header icon wrap"
-                                src="https://cdn.animaapp.com/projects/6560b21274de9042f7d947f4/releases/6567f295b8a0bf78ad4295d3/img/header-icon-wrap.svg"
-                            />
-                        </header>
-                    </div>
                     <div className="gathering-update-form-wrap">
                         <div className="gathering-update-text">봉사모임 수정</div>
                         <form className="gathering-update-form" method="post">
@@ -169,36 +131,6 @@ function GatheringUpdate() {
                     <div className="add-button-wrap">
                         <div className="add-button">
                             <button className="add-button-text" onClick={handleSubmit}>작성</button>
-                        </div>
-                    </div>
-                    <div className="footer-wrap">
-                        <div className="footer-logo-wrap">
-                            <div className="footer-image-wrap" />
-                        </div>
-                        <div className="footer-menu-wrap">
-                            <div className="div-wrapper-2">
-                                <div className="text-wrapper-3">이용안내</div>
-                            </div>
-                            <div className="div-wrapper-2">
-                                <div className="text-wrapper-3">공지사항</div>
-                            </div>
-                            <div className="div-wrapper-2">
-                                <div className="text-wrapper-3">Q&amp;A</div>
-                            </div>
-                            <div className="div-wrapper-2">
-                                <div className="text-wrapper-3">이용약관</div>
-                            </div>
-                            <div className="footer-privacy-wrap">
-                                <p className="footer-privacy">개인정보 수집 및 이용 동의</p>
-                            </div>
-                        </div>
-                        <div className="footer-inquiry-wrap">
-                            <div className="footer-inquiry">문의하기</div>
-                        </div>
-                        <div className="footer-button-wrap">
-                            <div className="footer-button">
-                                <div className="footer-button-text">바로가기</div>
-                            </div>
                         </div>
                     </div>
                 </div>

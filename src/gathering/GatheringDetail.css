@@ -7,17 +7,9 @@
     width: 1440px;
 }
 
-.detail-index .div {
-    background-color: #ffffff;
-    position: relative;
-   
-}
+
 .detail-index .overlap-group {
-    height: 1748px;
-    left: 31px;
-    position: absolute;
-    top: 590px;
-    width: 1390px;
+   align-items: center;
 }
 
 
@@ -40,19 +32,19 @@
     height: 295px;
     object-fit: cover;
     position: relative;
-    width: 879px;
+    width: fit-content;
     margin: 0auto;
 }
 
 .detail-index .detail-main-writer {
     align-items: center;
+
     background-color: #ffffff;
     border-radius: 21px;
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 10px;
-    overflow: hidden;
     padding: 57px 311px;
     position: relative;
    width: 600px;
@@ -116,7 +108,7 @@
     flex-direction: column;
     gap: 10px;
     position: relative;
-    width: 834px;
+    width: 800px;
 }
 
 .detail-index .text-wrapper-2 {
@@ -195,7 +187,8 @@
     overflow: hidden;
     padding: 10px;
     position: relative;
-    width: 100%;
+    width: 800px;
+    margin : 0 auto;
 }
 
 .detail-index .img {
@@ -227,7 +220,7 @@
 }
 
 .detail-index .detail-main-check-3 {
-    color: #000000;
+    color: #ffffff;
     font-family: "Inter", Helvetica;
     font-size: 12px;
     font-weight: 400;
@@ -242,13 +235,12 @@
 
 .detail-index .detail-main-info {
     align-items: flex-start;
-    align-self: stretch;
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 10px;
     position: relative;
-    width: 100%;
+    width: 850px;
 }
 
 .detail-index .detail-main-details {
@@ -379,12 +371,12 @@
 
 .detail-index .text-wrapper-update{
     font-family: "Inter", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     height: 40px;
     letter-spacing: 0;
     line-height: normal;
-    margin-top: 20px;
+    margin-top: 15px;
     position: relative;
     text-align: center;
     width: 133px;
@@ -396,8 +388,8 @@
 
 .detail-index .text-wrapper-delete {
     font-family: "Inter", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     height: 40px;
     letter-spacing: 0;
     line-height: normal;
@@ -433,14 +425,14 @@
     overflow: hidden;
     padding: 10px 0px;
     position: relative;
-    width: 100%;
-    margin-top: 10px;
+    width: 400px;
+    margin: 10px auto;
 }
 
 .detail-index .detail-join-text {
     color: #ffffff;
     font-family: "Inter", Helvetica;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: normal;
@@ -456,9 +448,9 @@
 
 .detail-index .profile-icon {
     height: 43px;
-    left: 682px;
+    left: 600px;
     position: absolute;
-    top: 337px;
+    top: 490px;
     width: 43px;
 }
 
@@ -471,11 +463,11 @@
     flex-direction: column;
     gap: 10px;
     height: 40px;
-    left: 70px;
+   
     padding: 10px;
-    position: absolute;
-    top: 494px;
-    width: 1270px;
+    position: relative;
+    margin: 50px auto;
+    width: 1200px;
 }
 
 .detail-index .title {
@@ -508,6 +500,7 @@
     align-self: stretch;
     object-fit: cover;
     position: relative;
+    
     
 }
 

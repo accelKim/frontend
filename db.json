@@ -168,6 +168,148 @@
       "description" : "깨물어주고 싶은 상큼함 초록빛 상큼한 디저트",
       "title" : "초록매실"
     }
-  ]
-  
-}
+  ],
+    "content": [
+        {
+            "gatheringId": 1,
+            "creatorId": 1,
+            "creatorName": "tester",
+            "title": "Address Test",
+            "intro": "Address Test",
+            "etc": "Address Test",
+            "zoneCode": "undefined",
+            "fullAddress": "경기 성남시 분당구 성남대로 지하 55(구미동, 오리역)",
+            "subAddress": "undefined",
+            "image": "https://image-bucket-practice1.s3.ap-northeast-2.amazonaws.com/images/gathering/e43cf113-f045-45c3-a229-0f3061942fd6",
+            "status": "CLOSED",
+            "deadline": "2023-12-09T16:54:00",
+            "startAt": "2023-12-10T16:54:00",
+            "count": 1,
+            "capacity": 10
+        },
+        {
+            "gatheringId": 2,
+            "creatorId": 1,
+            "creatorName": "tester",
+            "title": "zonecode, subaddress",
+            "intro": "zonecode, subaddress",
+            "etc": "zonecode, subaddress",
+            "zoneCode": "undefined",
+            "fullAddress": "경기 성남시 분당구 성남대로 지하 55(구미동, 오리역)",
+            "subAddress": "undefined",
+            "image": "https://image-bucket-practice1.s3.ap-northeast-2.amazonaws.com/images/gathering/714b9ff4-d8a4-46a0-a385-7c0ffe2baeeb",
+            "status": "CLOSED",
+            "deadline": "2023-12-09T17:08:00",
+            "startAt": "2023-12-10T17:08:00",
+            "count": 1,
+            "capacity": 10
+        },
+        {
+            "gatheringId": 3,
+            "creatorId": 1,
+            "creatorName": "tester",
+            "title": "why undefined?",
+            "intro": "why undefined?",
+            "etc": "why undefined?",
+            "zoneCode": "undefined",
+            "fullAddress": "경기 성남시 분당구 성남대로 지하 55(구미동, 오리역)",
+            "subAddress": "undefined",
+            "image": "https://image-bucket-practice1.s3.ap-northeast-2.amazonaws.com/images/gathering/979bebf5-abe7-4aea-b56e-9b232c96ac9a",
+            "status": "CLOSED",
+            "deadline": "2023-12-09T17:29:00",
+            "startAt": "2023-12-10T17:29:00",
+            "count": 1,
+            "capacity": 10
+        },
+        {
+            "gatheringId": 4,
+            "creatorId": 1,
+            "creatorName": "tester",
+            "title": "undefined?",
+            "intro": "undefined?",
+            "etc": "undefined?",
+            "zoneCode": "undefined",
+            "fullAddress": "경기 성남시 분당구 성남대로 지하 55(구미동, 오리역)",
+            "subAddress": "undefined",
+            "image": "https://image-bucket-practice1.s3.ap-northeast-2.amazonaws.com/images/gathering/c66585ab-18cb-4341-8b4a-b0a11df15884",
+            "status": "CLOSED",
+            "deadline": "2023-12-09T17:33:00",
+            "startAt": "2023-12-10T17:33:00",
+            "count": 1,
+            "capacity": 1
+        },
+        {
+            "gatheringId": 5,
+            "creatorId": 1,
+            "creatorName": "tester",
+            "title": "undefined test",
+            "intro": "undefined test",
+            "etc": "undefined test",
+            "zoneCode": "undefined",
+            "fullAddress": "경기 성남시 분당구 성남대로 지하 55(구미동, 오리역)",
+            "subAddress": "undefined",
+            "image": "https://image-bucket-practice1.s3.ap-northeast-2.amazonaws.com/images/gathering/fb351037-8dcd-42ac-8851-d22557407e24",
+            "status": "CLOSED",
+            "deadline": "2023-12-09T17:37:00",
+            "startAt": "2023-12-10T17:37:00",
+            "count": 1,
+            "capacity": 5
+        },
+        {
+            "gatheringId": 6,
+            "creatorId": 1,
+            "creatorName": "tester",
+            "title": "undefined fin?",
+            "intro": "undefined fin?",
+            "etc": "undefined fin?",
+            "zoneCode": "undefined",
+            "fullAddress": "경기 성남시 분당구 성남대로 지하 55(구미동, 오리역)",
+            "subAddress": "구미동, 오리역",
+            "image": "https://image-bucket-practice1.s3.ap-northeast-2.amazonaws.com/images/gathering/586fc86b-5b3f-45ae-9e36-592c7a901b45",
+            "status": "CLOSED",
+            "deadline": "2023-12-09T17:42:00",
+            "startAt": "2023-12-10T17:42:00",
+            "count": 1,
+            "capacity": 2
+        },
+        {
+            "gatheringId": 7,
+            "creatorId": 1,
+            "creatorName": "tester",
+            "title": "real fin",
+            "intro": "real fin",
+            "etc": "real fin",
+            "zoneCode": "13636",
+            "fullAddress": "경기 성남시 분당구 성남대로 지하 55(구미동, 오리역)",
+            "subAddress": "구미동, 오리역",
+            "image": "https://image-bucket-practice1.s3.ap-northeast-2.amazonaws.com/images/gathering/36f2c3d5-1f6f-442a-8207-f3c925295c0c",
+            "status": "CLOSED",
+            "deadline": "2023-12-09T17:44:00",
+            "startAt": "2023-12-10T17:44:00",
+            "count": 1,
+            "capacity": 2222
+        },
+        {
+            "gatheringId": 8,
+            "creatorId": 1,
+            "creatorName": "tester",
+            "title": "1209",
+            "intro": "1209",
+            "etc": "1209",
+            "zoneCode": "13636",
+            "fullAddress": "경기 성남시 분당구 성남대로 지하 55(구미동, 오리역)",
+            "subAddress": "지하",
+            "image": "https://image-bucket-practice1.s3.ap-northeast-2.amazonaws.com/images/gathering/e3c1d464-acc3-46ab-9d0a-b39e0287e176",
+            "status": "OPEN",
+            "deadline": "2023-12-10T17:48:00",
+            "startAt": "2023-12-11T17:48:00",
+            "count": 1,
+            "capacity": 10
+        }
+    ]
+  }
+ 
+
+ 
+
+

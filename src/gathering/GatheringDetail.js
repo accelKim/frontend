@@ -66,9 +66,14 @@ function GatheringDetail() {
 
     return (
         <div className="detail-index">
+            
             <div className="div">
+                
                 <div className="overlap-group">
                     <div className="detail-main-wrap">
+                    <div className="gathering-title">
+                    <div className="title">오리역 봉사모임!</div>
+                </div>
                         <div className="detail-main">
                             <img
                                 className="nature"
@@ -157,18 +162,6 @@ function GatheringDetail() {
                         alt="Profile icon"
                         src="https://cdn.animaapp.com/projects/6560b21274de9042f7d947f4/releases/656794b954eecaa3161d736b/img/profile-icon.svg"
                     />
-                </div>
-                <div className="gathering-title">
-                    <div className="title">오리역 봉사모임!</div>
-                </div>
-                <div className="gathering-banner">
-                    <img
-                        className="nature-2"
-                        alt="Nature"
-                        src="https://cdn.animaapp.com/projects/6560b21274de9042f7d947f4/releases/656794b954eecaa3161d736b/img/nature-3289812-1920-2-1.png"
-                    />
-                    <div className="banner-text-big">모임에 참석해 보세요!</div>
-                    <p className="banner-text-small">소규모 모임부터 봉사 모임까지 주변 사람들과 모여서 봉사활동을 시작하세요!</p>
                 </div>
             </div>
         </div>
