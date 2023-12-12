@@ -1,0 +1,27 @@
+.adim-user-index {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .adim-user-index .div-2 {
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    width: 1440px;
+  }
+
+  
+/* 테이블 */
+.adim-user-index Table {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 60vw;
+}
+.adim-user-index .table-wrap {
+  height: fit-content;
+  
+}

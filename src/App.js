@@ -10,7 +10,9 @@ import GatheringDetail from './gathering/GatheringDetail';
 import GatheringAdd from './gathering/GatheringAdd';
 import GatheringList from './gathering/GatheringList';
 import GatheringUpdate from './gathering/GatheringUpdate';
-import ErrorPage from './errorpage/ErrorPage'
+import ErrorPage from './errorpage/ErrorPage';
+
+import AdminLayout from './component/AdminLayout';
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
           <Route path='/gathering/update' element={<GatheringUpdate />} />
           <Route path='/gathering/add' element={<GatheringAdd />} />
           <Route path='*' element={<ErrorPage />} />
+          <Route path='/admin/user' element={<AdminLayout />} />
       </Routes>
     </BrowserRouter>
   );
