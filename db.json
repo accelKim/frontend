@@ -307,7 +307,7 @@
             "capacity": 10
         }
     ],
-    "user" : [
+    "users" : [
       {
         "user_id" : 1,
         "id": "dnjsgh",
@@ -351,6 +351,9 @@
         "isadmin" : true,
         "profile" : "",
         "create_at": "2023-12-13"
+      },
+      {
+        
       }
     ]
   }

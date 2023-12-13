@@ -1,6 +1,7 @@
 import React from 'react'
 
 
+
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
@@ -53,6 +54,7 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
 //관리자 페이지 구현
 const Users = React.lazy(() => import('./views/user/Users'))
+const Mission = React.lazy(() => import('./views/mission/Missions'))
 
 const routes = [
   { path: '/admin', exact: true, name: 'Home' },
@@ -99,7 +101,8 @@ const routes = [
   { path: '/notifications/modals', name: 'Modals', element: Modals },
   { path: '/notifications/toasts', name: 'Toasts', element: Toasts },
   { path: '/widgets', name: 'Widgets', element: Widgets },
-  { path: '/users', name: 'Widgets', element: Users },
+  { path: '/users', name: 'Users', element: Users },
+  { path: '/mission', name: 'Mission', element: Mission },
 
 ]
 

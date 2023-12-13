@@ -3,16 +3,6 @@ import React from "react";
 import { useState , useEffect} from "react";
 import { CSmartTable } from "@coreui/react-pro";
 import { CAvatar, CBadge, CButton,CCollapse, CCardBody } from "@coreui/react-pro";
-// import '../../assets/images/avatars/1.jpg'
-// import '../../assets/images/avatars/2.jpg'
-// import '../../assets/images/avatars/3.jpg'
-// import '../../assets/images/avatars/4.jpg'
-// import '../../assets/images/avatars/5.jpg'
-// import '../../assets/images/avatars/6.jpg'
-// import '../../assets/images/avatars/7.jpg'
-// import '../../assets/images/avatars/8.jpg'
-// import '../../assets/images/avatars/9.jpg'
-
 
 
 const Users = () => {
@@ -28,14 +18,22 @@ const Users = () => {
         key: 'name',
         _style: { width: '20%' },
       },
-      'registered',
+      {
+        key: 'address',
+        label: 'Address',
+        _style: { width: '20%' },
+      },
+      {
+        key : 'email'
+      },
       { 
         key: 'role',
         _style: { width: '20%' }
       },
-      { 
-        key: 'status',
-        _style: { width: '20%' }
+      {
+        key: 'point',
+        label: 'Point',
+        _style: { width: '20%' },
       },
       {
         key: 'show_details',
@@ -49,125 +47,152 @@ const Users = () => {
       {
         id: 1,
         name: 'Samppa Nori',
-        avatar: '1.jpg',
-        registered: '2022/01/01',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+        address : '경기도 용인시 기흥구 마북동',
         role: 'Member',
         status: 'Active',
+        email : 'asd@naver.com',
+        point : 1000,
       },
       {
         id: 2,
         name: 'Estavan Lykos',
-        avatar: '2.jpg',
-        registered: '2022/02/07',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+       address : '경기도 용인시 기흥구 마북동',
         role: 'Staff',
         status: 'Banned',
+        email : 'asd@naver.com',
+        point : 100,
       },
       {
         id: 3,
         name: 'Chetan Mohamed',
-        avatar: '3.jpg',
-        registered: '2022/02/07',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+       address : '경기도 용인시 기흥구 마북동',
         role: 'Admin',
+        email : 'asd@naver.com',
         status: 'Inactive',
-        _selected: true,
+        point : 100,
+       
       },
       {
         id: 4,
         name: 'Derick Maximinus',
-        avatar: '4.jpg',
-        registered: '2022/03/19',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+       address : '경기도 용인시 기흥구 마북동',
         role: 'Member',
+        email : 'asd@naver.com',
         status: 'Pending',
+        point : 1000,
       },
       {
         id: 5,
         name: 'Friderik Dávid',
-        avatar: '5.jpg',
-        registered: '2022/01/21',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+        address : '경기도 용인시 기흥구 마북동',
         role: 'Staff',
-        status: 'Active'
+        email : 'asd@naver.com',
+        status: 'Active',
+        point : 90000,
       },
       { 
         id: 6,
         name: 'Yiorgos Avraamu',
-        avatar: '6.jpg',
-        registered: '2022/01/01',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+        address : '경상북도',
         role: 'Member',
-        status: 'Active'
+        email : 'asd@naver.com',
+        status: 'Active',
+        point : 19000,
       },
       {
         id: 7,
         name: 'Avram Tarasios',
-        avatar: '7.jpg',
-        registered: '2022/02/07',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+       address : '전라남도 광주',
         role: 'Staff',
-        status: 'Banned',
-        _selected: true,
+        email : 'asd@naver.com', 
+        point : 10900,
       },
       {
         id: 8,
         name: 'Quintin Ed',
-        avatar: '8.jpg',
-        registered: '2022/02/07',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+       address : '경기도 용인시 기흥구 마북동',
         role: 'Admin',
-        status: 'Inactive'
+        email : 'asd@naver.com',
+        status: 'Inactive',
+        point : 10090,
       },
       { 
         id: 9,
         name: 'Enéas Kwadwo',
-        avatar: '9.jpg',
-        registered: '2022/03/19',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+       address : '경기도 용인시 기흥구 마북동',
         role: 'Member',
-        status: 'Pending'
+        email : 'asd@naver.com',
+        status: 'Pending',
+        point : 10009,
       },
       { 
         id: 10,
         name: 'Agapetus Tadeáš',
-        avatar: '10.jpg',
-        registered: '2022/01/21',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+        address : '인천 부평',
         role: 'Staff',
-        status: 'Active'
+        email : 'asd@naver.com',
+        status: 'Active',
+        point : 10000,
       },
       { 
         id: 11,
         name: 'Carwyn Fachtna',
-        avatar: '11.jpg',
-        registered: '2022/01/01',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+        address : '경기도 용인시 기흥구 마북동',
         role: 'Member',
-        status: 'Active'
+        email : 'asd@naver.com',
+        status: 'Active',
+        point : 10000,
       },
       {
         id: 12,
         name: 'Nehemiah Tatius',
-        avatar: '12.jpg',
-        registered: '2022/02/07',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+       address : '부산시 광안리',
         role: 'Staff',
+        email : 'asd@naver.com',
         status: 'Banned',
-        _selected: true,
+        point : 10000,
       },
       {
         id: 13,
         name: 'Ebbe Gemariah',
-        avatar: '13.jpg',
-        registered: '2022/02/07',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+       address : '강원도 철원',
         role: 'Admin',
-        status: 'Inactive'
+        email : 'asd@naver.com',
+        status: 'Inactive',
+        point : 10000,
       },
       {
         id: 14,
         name: 'Eustorgios Amulius',
-        avatar: '14.jpg',
-        registered: '2022/03/19',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+       address : '경기도 용인시 기흥구 마북동',
         role: 'Member',
+        email : 'asd@naver.com',
         status: 'Pending',
+        point : 10000,
       },
       {
         id: 15,
         name: '김원호',
-        avatar: '15.jpg',
-        registered: '2022/01/21',
+        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
+        address : '서울시 강남구',
         role: 'Staff',
-        status: 'Active'
+        email : 'asd@naver.com',
+        status: 'Active',
+        point : 10000,
       },
     ]
     const getBadge = (status) => {
@@ -206,6 +231,7 @@ const Users = () => {
         items={usersData}
         itemsPerPageSelect
         itemsPerPage={5}
+        
         pagination
         onFilteredItemsChange={(items) => {
           console.log(items)
@@ -214,9 +240,14 @@ const Users = () => {
           console.log(items)
         }}
         scopedColumns={{
+          address: (item) => (
+            <td>
+              {item.address.length > 7 ? `${item.address.substring(0, 7)}...` : item.address}
+            </td>
+          ),
           avatar: (item) => (
             <td>
-              <CAvatar src={`/images/avatars/${item.avatar}`} />
+              <CAvatar src={item.avatar}></CAvatar>
             </td>
           ),
           status: (item) => (
@@ -245,8 +276,8 @@ const Users = () => {
             return (
               <CCollapse visible={details.includes(item.id)}>
                 <CCardBody className="p-3">
-                  <h4>{item.username}</h4>
-                  <p className="text-muted">User since: {item.registered}</p>
+                  <h4>{item.name}</h4>
+                  <p className="text-muted">주소 : {item.address}</p>
                   <CButton size="sm" color="info">
                     User Settings
                   </CButton>

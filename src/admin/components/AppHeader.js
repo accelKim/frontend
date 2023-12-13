@@ -16,7 +16,8 @@ import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
 
 import { AppBreadcrumb } from './index'
 import { AppHeaderDropdown } from './header/index'
-import { logo } from '../assets/brand/logo'
+import logo from '../assets/brand/eco-connect-logo.png'
+
 
 const AppHeader = () => {
   const dispatch = useDispatch()

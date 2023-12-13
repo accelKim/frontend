@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import Home from './home/home'
+
 import { BrowserRouter, Route ,Routes} from 'react-router-dom';
 import Layout from './component/Layout';
 import MissionList from './mission/MissionList';
@@ -11,7 +11,6 @@ import GatheringAdd from './gathering/GatheringAdd';
 import GatheringList from './gathering/GatheringList';
 import GatheringUpdate from './gathering/GatheringUpdate';
 import ErrorPage from './errorpage/ErrorPage';
-
 import DefaultLayout from './admin/layout/DefaultLayout';
 import Dashboard from './admin/views/dashboard/Dashboard';
 import './admin/scss/style.scss'
