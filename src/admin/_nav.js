@@ -21,10 +21,7 @@ const _nav = [
     name: 'Dashboard',
     to: '/admin/dashboard',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    },
+   
   },
   {
     component: CNavTitle,
@@ -32,14 +29,32 @@ const _nav = [
   },
   {
     component: CNavItem,
-    name: 'Colors',
-    to: '/admin/theme/colors',
-    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+    name: '유저 관리',
+    to: '/admin/users',
+    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Typography',
-    to: '/admin/theme/typography',
+    name: '환경 보호 미션 관리',
+    to: '/admin/mission',
+    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: '봉사 모임 관리',
+    to: '/admin/gathering',
+    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: '펀딩 관리',
+    to: '/admin/pundding',
+    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: '공지사항 관리',
+    to: '/admin/notice',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
