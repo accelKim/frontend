@@ -306,6 +306,52 @@
             "count": 1,
             "capacity": 10
         }
+    ],
+    "user" : [
+      {
+        "user_id" : 1,
+        "id": "dnjsgh",
+        "password" : "1234",
+        "name": "김수로",
+        "email" : " asd@naver.com",
+        "address" : "경기도 용인시 기흥구 마북동",
+        "isadmin" : true,
+        "profile" : "",
+        "create_at": "2023-12-13"
+      },
+      {
+        "user_id" : 2,
+        "id": "dnjsgh",
+        "password" : "1234",
+        "name": "김수로",
+        "email" : " asd@naver.com",
+        "address" : "경기도 용인시 기흥구 마북동",
+        "isadmin" : true,
+        "profile" : "",
+        "create_at": "2023-12-13"
+      },
+      {
+        "user_id" :3,
+        "id": "dnjsgh",
+        "password" : "1234",
+        "name": "김수로",
+        "email" : " asd@naver.com",
+        "address" : "경기도 용인시 기흥구 마북동",
+        "isadmin" : true,
+        "profile" : "",
+        "create_at": "2023-12-13"
+      },
+      {
+        "user_id" : 4,
+        "id": "dnjsgh",
+        "password" : "1234",
+        "name": "김수로",
+        "email" : " asd@naver.com",
+        "address" : "경기도 용인시 기흥구 마북동",
+        "isadmin" : true,
+        "profile" : "",
+        "create_at": "2023-12-13"
+      }
     ]
   }
  

@@ -25,8 +25,10 @@
 .adim-user-index Table {
     position: relative;
     margin: 0 auto;
-    margin-top: -80%;
-    left: 300px;
+    margin-top: 100px;
+    width: 60vw;
+    text-align: center;
+    vertical-align: middle;
 }
 
 
