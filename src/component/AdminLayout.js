@@ -7,7 +7,7 @@ import AdminSidebar from "./sidebar";
 function AdminLayout() {
     return (
         <>
-            <AdminSidebar />
+        
             <AdminUser />
          
         </>

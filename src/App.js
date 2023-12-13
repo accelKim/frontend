@@ -12,7 +12,9 @@ import GatheringList from './gathering/GatheringList';
 import GatheringUpdate from './gathering/GatheringUpdate';
 import ErrorPage from './errorpage/ErrorPage';
 
-import AdminLayout from './component/AdminLayout';
+import DefaultLayout from './admin/layout/DefaultLayout';
+import Dashboard from './admin/views/dashboard/Dashboard';
+import './admin/scss/style.scss'
 
 function App() {
   return (
@@ -26,7 +28,8 @@ function App() {
           <Route path='/gathering/update' element={<GatheringUpdate />} />
           <Route path='/gathering/add' element={<GatheringAdd />} />
           <Route path='*' element={<ErrorPage />} />
-          <Route path='/admin/user' element={<AdminLayout />} />
+          <Route path='/admin/*' element={<DefaultLayout />} />
+        
       </Routes>
     </BrowserRouter>
   );
