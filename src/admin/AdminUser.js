@@ -3,8 +3,9 @@ import "./AdminUser.css";
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import Card from 'react-bootstrap/Card';
-import Sidebar from "../component/sidebar";
+import AdminPagiNation from "../component/AdminPaiNation";
+
+
 
  const AdminUser = () => {
   return (
@@ -98,8 +99,11 @@ import Sidebar from "../component/sidebar";
         </tr>
       </tbody>
     </Table>
+    <AdminPagiNation/>
+    
     </div>
       </div>
+      
     </div>
   );
 };
