@@ -1,99 +1,16 @@
 .mission-detail-index {
     align-items: center;
     background-color: #ffffff;
-    display: block;
+    display: flex;
     flex-direction: column;
     gap: 10px;
     position: relative;
     transform: scale(0.75);
-    margin: 0 auto;
+    margin:  auto;
     height: 0;
     width: 1440px;
+    margin-bottom: 1300px;
     
-  }
-  
-  .mission-detail-index .header-login {
-    align-items: flex-start;
-    background-color: #ffffff;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 10px;
-    position: relative;
-    width: 1440px;
-  }
-  
-  .mission-detail-index .header-wrap {
-    align-items: center;
-    display: inline-flex;
-    flex: 0 0 auto;
-    justify-content: center;
-    position: relative;
-    height: 100px;
-    margin-bottom: 25px;
-    width: 1440px;
-
-  }
-  
-  .mission-detail-index .eco-connect-logo {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 163px;
-    justify-content: center;
-    padding: 42px 2px;
-    position: relative;
-    width: 290px;
-  }
-  
-  .mission-detail-index .img {
-    height: 69.37px;
-    object-fit: cover;
-    position: relative;
-    width: 190px;
-  }
-  
-  .mission-detail-index .header-menu-wrap {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 163px;
-    justify-content: center;
-    padding: 25px 49px;
-    position: relative;
-    width: 880px;
-  }
-  
-  .mission-detail-index .header-menu {
-    align-items: center;
-    display: flex;
-    gap: 80px;
-    height: 31px;
-    justify-content: center;
-    position: relative;
-    width: 700px;
-  }
-  
-  .mission-detail-index .text-wrapper {
-    color: #000000;
-    font-family: "Do Hyeon", Helvetica;
-    font-size: 20px;
-    font-weight: 400;
-    height: 40px;
-    letter-spacing:0;
-    line-height: normal;
-    margin-top: -1px;
-    position: relative;
-    width: 77px;
-    white-space: nowrap;
-  }
-  
-  .mission-detail-index .header-icons {
-    height: 163px;
-    position: relative;
-    width: 270px;
   }
   
   .mission-detail-index .mission-detail-start {
@@ -110,7 +27,6 @@
   
   .mission-detail-index .mission-detail-start-2 {
     height: 230px;
-    
     position: a;
     width: 1040px;
     margin: auto;

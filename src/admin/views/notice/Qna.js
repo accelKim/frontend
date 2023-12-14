@@ -3,18 +3,12 @@ import React from "react";
 import { useState , useEffect} from "react";
 import { CSmartTable } from "@coreui/react-pro";
 import { CAvatar, CBadge, CButton,CCollapse, CCardBody } from "@coreui/react-pro";
-import MissionModify from "./MissionModify";
 
 
-const Missions = () => {
+const Qna = () => {
     const [details, setDetails] = useState([])
     const columns = [
-      {
-        key: 'image',
-        label: '',
-        filter: false,
-        sorter: false,
-      },
+    
       {
         key: 'title',
         _style: { width: '20%' },
@@ -25,16 +19,19 @@ const Missions = () => {
         _style: { width: '20%' },
       },
       {
-        key : 'create_at',
+        key : 'capacity',
         _style: { width: '20%' }
       },
       { 
-        key: 'modify_at',
+        key: 'create_at',
         _style: { width: '20%' }
       },
       {
-        key: 'get_point',
-        label: 'Point',
+        key: 'status',
+        _style: { width: '20%' },
+      },
+      {
+        key: 'recomend',
         _style: { width: '20%' },
       },
       {
@@ -261,9 +258,11 @@ const Missions = () => {
                 <CCardBody className="p-3">
                   <h4>{item.title}</h4>
                   <p className="text-muted">내용 : {item.content}</p>
-                    <MissionModify />
-                  <CButton size="sm" color="danger" className="ml-1"  style={{color:'white'}}>
-                    삭제
+                  <CButton size="sm" color="info">
+                    User Settings
+                  </CButton>
+                  <CButton size="sm" color="danger" className="ml-1">
+                    Delete
                   </CButton>
                 </CCardBody>
               </CCollapse>
@@ -286,4 +285,4 @@ const Missions = () => {
     );
 }
 
-export default Missions;
+export default Qna;

@@ -3,10 +3,9 @@ import React from "react";
 import { useState , useEffect} from "react";
 import { CSmartTable } from "@coreui/react-pro";
 import { CAvatar, CBadge, CButton,CCollapse, CCardBody } from "@coreui/react-pro";
-import MissionModify from "./MissionModify";
 
 
-const Missions = () => {
+const Fna = () => {
     const [details, setDetails] = useState([])
     const columns = [
       {
@@ -24,18 +23,9 @@ const Missions = () => {
         label: 'content',
         _style: { width: '20%' },
       },
-      {
-        key : 'create_at',
-        _style: { width: '20%' }
-      },
       { 
-        key: 'modify_at',
+        key: 'create_at',
         _style: { width: '20%' }
-      },
-      {
-        key: 'get_point',
-        label: 'Point',
-        _style: { width: '20%' },
       },
       {
         key: 'show_details',
@@ -261,9 +251,11 @@ const Missions = () => {
                 <CCardBody className="p-3">
                   <h4>{item.title}</h4>
                   <p className="text-muted">내용 : {item.content}</p>
-                    <MissionModify />
-                  <CButton size="sm" color="danger" className="ml-1"  style={{color:'white'}}>
-                    삭제
+                  <CButton size="sm" color="info">
+                    User Settings
+                  </CButton>
+                  <CButton size="sm" color="danger" className="ml-1">
+                    Delete
                   </CButton>
                 </CCardBody>
               </CCollapse>
@@ -286,4 +278,4 @@ const Missions = () => {
     );
 }
 
-export default Missions;
+export default Fna;

@@ -3,10 +3,10 @@ import React from "react";
 import { useState , useEffect} from "react";
 import { CSmartTable } from "@coreui/react-pro";
 import { CAvatar, CBadge, CButton,CCollapse, CCardBody } from "@coreui/react-pro";
-import MissionModify from "./MissionModify";
+import PundingModify from "./PundingModify";
 
 
-const Missions = () => {
+const Punding = () => {
     const [details, setDetails] = useState([])
     const columns = [
       {
@@ -25,16 +25,27 @@ const Missions = () => {
         _style: { width: '20%' },
       },
       {
-        key : 'create_at',
+        key : 'start_end',
         _style: { width: '20%' }
       },
       { 
-        key: 'modify_at',
+        key: 'likes',
         _style: { width: '20%' }
       },
       {
-        key: 'get_point',
-        label: 'Point',
+        key: 'status',
+        _style: { width: '20%' },
+      },
+      {
+        key: 'category',
+        _style: { width: '20%' },
+      },
+      {
+        key: 'create_at',
+        _style: { width: '20%' },
+      },
+      {
+        key: 'collecting',
         _style: { width: '20%' },
       },
       {
@@ -261,13 +272,14 @@ const Missions = () => {
                 <CCardBody className="p-3">
                   <h4>{item.title}</h4>
                   <p className="text-muted">내용 : {item.content}</p>
-                    <MissionModify />
-                  <CButton size="sm" color="danger" className="ml-1"  style={{color:'white'}}>
+                   <PundingModify />
+                  <CButton size="sm" color="danger" className="ml-1" style={{color:'white'}}>
                     삭제
                   </CButton>
+                
                 </CCardBody>
               </CCollapse>
-            )
+            ) 
           },
         }}
         selectable
@@ -286,4 +298,4 @@ const Missions = () => {
     );
 }
 
-export default Missions;
+export default Punding;

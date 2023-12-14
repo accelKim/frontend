@@ -4,15 +4,14 @@ import React from 'react';
 
 import { BrowserRouter, Route ,Routes} from 'react-router-dom';
 import Layout from './component/Layout';
-import MissionList from './mission/MissionList';
-import MissionDetail from './mission/MissionDetail';
+import MissionListLayout from './mission/MissionListLayout';
+import MssionDetailLayout from './mission/MssionDetailLayout';
 import GatheringDetail from './gathering/GatheringDetail';
 import GatheringAdd from './gathering/GatheringAdd';
 import GatheringList from './gathering/GatheringList';
 import GatheringUpdate from './gathering/GatheringUpdate';
 import ErrorPage from './errorpage/ErrorPage';
 import DefaultLayout from './admin/layout/DefaultLayout';
-import Dashboard from './admin/views/dashboard/Dashboard';
 import './admin/scss/style.scss'
 
 function App() {
@@ -20,8 +19,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<Layout></Layout>}></Route>
-          <Route path='/mission' element={<MissionList />} />
-          <Route path='/mission/detail' element={<MissionDetail />} />
+          <Route path='/mission' element={<MissionListLayout />} />
+          <Route path='/mission/detail' element={<MssionDetailLayout />} />
           <Route path='/gathering' element={<GatheringList />} />
           <Route path='/gathering/detail' element={<GatheringDetail />} />
           <Route path='/gathering/update' element={<GatheringUpdate />} />

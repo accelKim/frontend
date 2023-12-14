@@ -4,31 +4,6 @@ function MissionDetail() {
 
     return (
         <div className="mission-detail-index">
-      <div className="header-login">
-        <div className="header-wrap">
-          <div className="eco-connect-logo">
-            <img
-              className="img"
-              alt="Eco connect logo"
-              src="https://cdn.animaapp.com/projects/6560b21274de9042f7d947f4/releases/656f39b816e4b95e9e1c32c1/img/eco-connect-logo.png"
-            />
-          </div>
-          <div className="header-menu-wrap">
-            <div className="header-menu">
-              <div className="text-wrapper">봉사미션</div>
-              <div className="text-wrapper">봉사모임</div>
-              <div className="text-wrapper">리워드</div>
-              <div className="text-wrapper">펀딩</div>
-              <div className="text-wrapper">고객지원</div>
-            </div>
-          </div>
-          <img
-            className="header-icons"
-            alt="Header icons"
-            src="https://cdn.animaapp.com/projects/6560b21274de9042f7d947f4/releases/65715e6bc2e3a066593b0581/img/header-icons.svg"
-          />
-        </div>
-      </div>
       <div className="mission-detail-start">
         <div className="banner_div">
           <img
@@ -297,30 +272,6 @@ function MissionDetail() {
           </div>
         </div>
       </div>
-      <footer className="footer">
-        <div className="footer-wrap">
-          <div className="logo-wrap">
-            <img
-              className="img"
-              alt="Eco connect logo"
-              src="https://cdn.animaapp.com/projects/6560b21274de9042f7d947f4/releases/656f39b816e4b95e9e1c32c1/img/eco-connect-logo.png"
-            />
-          </div>
-          <div className="menu-wrap">
-            <div className="text-wrapper-3">미용안내</div>
-            <div className="text-wrapper-3">공지사항</div>
-            <div className="q-a">Q&amp;A</div>
-            <div className="text-wrapper-3">이용약관</div>
-            <p className="text-wrapper-4">개인정보 수집 및 이용 동의</p>
-          </div>
-          <div className="inquiry-button-wrap">
-            <div className="inquiry">문의하기</div>
-            <div className="direct-button">
-              <div className="direct">바로가기</div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
     )
 }

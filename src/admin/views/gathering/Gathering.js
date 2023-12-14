@@ -3,11 +3,12 @@ import React from "react";
 import { useState , useEffect} from "react";
 import { CSmartTable } from "@coreui/react-pro";
 import { CAvatar, CBadge, CButton,CCollapse, CCardBody } from "@coreui/react-pro";
-import MissionModify from "./MissionModify";
+import GatheringModify from "./GatheringModify";
 
 
-const Missions = () => {
+const Gathering = () => {
     const [details, setDetails] = useState([])
+    const [visible, setVisible] = useState(false)
     const columns = [
       {
         key: 'image',
@@ -25,16 +26,16 @@ const Missions = () => {
         _style: { width: '20%' },
       },
       {
-        key : 'create_at',
+        key : 'capacity',
         _style: { width: '20%' }
       },
       { 
-        key: 'modify_at',
+        key: 'create_at',
         _style: { width: '20%' }
       },
       {
-        key: 'get_point',
-        label: 'Point',
+        key: 'leader',
+        label: 'Leader',
         _style: { width: '20%' },
       },
       {
@@ -261,8 +262,8 @@ const Missions = () => {
                 <CCardBody className="p-3">
                   <h4>{item.title}</h4>
                   <p className="text-muted">내용 : {item.content}</p>
-                    <MissionModify />
-                  <CButton size="sm" color="danger" className="ml-1"  style={{color:'white'}}>
+                   <GatheringModify />
+                  <CButton size="sm" color="danger" className="ml-1" style={{color:'white'}}>
                     삭제
                   </CButton>
                 </CCardBody>
@@ -286,4 +287,4 @@ const Missions = () => {
     );
 }
 
-export default Missions;
+export default Gathering;

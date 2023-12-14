@@ -2,11 +2,13 @@ import React from "react";
 
 import { useState , useEffect} from "react";
 import { CSmartTable } from "@coreui/react-pro";
-import { CAvatar, CBadge, CButton,CCollapse, CCardBody } from "@coreui/react-pro";
+import { CAvatar, CBadge, CButton,CCollapse, CCardBody} from "@coreui/react-pro";
+import UserModify from "./UserModify";
 
 
 const Users = () => {
     const [details, setDetails] = useState([])
+    const [visible, setVisible] = useState(false)
     const columns = [
       {
         key: 'avatar',
@@ -278,11 +280,9 @@ const Users = () => {
                 <CCardBody className="p-3">
                   <h4>{item.name}</h4>
                   <p className="text-muted">주소 : {item.address}</p>
-                  <CButton size="sm" color="info">
-                    User Settings
-                  </CButton>
-                  <CButton size="sm" color="danger" className="ml-1">
-                    Delete
+                  <UserModify />
+                  <CButton size="sm" color="danger" className="ml-1" style={{color:'white'}}>
+                    삭제
                   </CButton>
                 </CCardBody>
               </CCollapse>
