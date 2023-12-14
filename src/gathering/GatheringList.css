@@ -10,6 +10,7 @@
     position: relative;
     transform: scale(0.75);
     margin: 0 auto;
+    margin-bottom: 1000px;
 }
 
 .gathering-index .div {

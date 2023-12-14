@@ -3,6 +3,7 @@ import React from "react";
 import { useState , useEffect} from "react";
 import { CSmartTable } from "@coreui/react-pro";
 import { CAvatar, CBadge, CButton,CCollapse, CCardBody } from "@coreui/react-pro";
+import FnaModify from "./FnaModify";
 
 
 const Fna = () => {
@@ -251,11 +252,9 @@ const Fna = () => {
                 <CCardBody className="p-3">
                   <h4>{item.title}</h4>
                   <p className="text-muted">내용 : {item.content}</p>
-                  <CButton size="sm" color="info">
-                    User Settings
-                  </CButton>
-                  <CButton size="sm" color="danger" className="ml-1">
-                    Delete
+                    <FnaModify />
+                  <CButton size="sm" color="danger" className="ml-1" style={{color:'white'}}>
+                    삭제
                   </CButton>
                 </CCardBody>
               </CCollapse>

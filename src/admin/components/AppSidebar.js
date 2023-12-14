@@ -7,7 +7,7 @@ import CIcon from '@coreui/icons-react'
 import { AppSidebarNav } from './AppSidebarNav'
 
 import  logoNegative from '../assets/brand/eco-connect-logo.png'
-import { sygnet } from '../assets/brand/sygnet'
+
 
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'

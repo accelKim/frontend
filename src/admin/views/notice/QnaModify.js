@@ -12,19 +12,12 @@ import {
     CFormTextarea,
     CFormSelect
   } from '@coreui/react'
-  
  import React from 'react'
  import { useState } from 'react'
- import DatePicker from "react-datepicker";
- import "react-datepicker/dist/react-datepicker.css";
-
  
  
- const PundingModify =  () => {
+ const QnaModify =  () => {
      const [visible, setVisible] = useState(false)
-     const [startDate, setStartDate] = useState(new Date());
-     const [endDate, setEndDate] = useState(new Date());
-     
      return (
          <>
      <CButton onClick={() => setVisible(!visible)} style={{height:'30px',lineHeight:'5px'}}>수정</CButton>
@@ -35,7 +28,6 @@ import {
        visible={visible}
        onClose={() => setVisible(false)}
        aria-labelledby="VerticallyCenteredScrollableExample"
-       
      >
        <CModalHeader>
          <CModalTitle id="VerticallyCenteredScrollableExample">수정</CModalTitle>
@@ -43,7 +35,7 @@ import {
        <CModalBody>
 
       
-  <CFormInput type="file" id="mainImage" label="메인이미지" accept='image/*' />
+  <CFormInput type="file" id="formFile" label="이미지" accept='image/*' />
   <br></br>
 
        <CInputGroup className="mb-3">
@@ -51,23 +43,12 @@ import {
    <CFormInput aria-label="title" aria-describedby="basic-addon1"/>
         </CInputGroup>
  
-        <CFormInput type="file" id="subIamge" label="내용사진" accept='image/*' />
-        <br></br>
     <CInputGroup>
      <CInputGroupText>내용</CInputGroupText>
      <CFormTextarea aria-label="content"></CFormTextarea>
     </CInputGroup>
  <br></br>
-  <DatePicker selected={startDate} onChange={(date) => setStartDate(date)}/>
 
- <br></br>
- <br></br>
- <DatePicker selected={endDate} onChange={(date) => setEndDate(date)}/>
- <br></br>
- <br></br>
- 
- <CFormSwitch size="xl" label="펀딩 상태" id="mission_status"/>
- <br></br>
  <CFormSelect 
   aria-label="Default select example"
   options={[
@@ -79,23 +60,13 @@ import {
 />
 <br></br>
 
-<CFormInput
-  type="text"
-  placeholder="2023/12/14"
-  aria-label="readonly input example"
-  label="작성일"
-  readOnly
-/>
-<br></br>
-<CFormInput
-  type="text"
-  placeholder="10000000원"
-  aria-label="readonly input example"
-  label="모금액"
-  readOnly
-/>
-
-
+<CInputGroup>
+     <CInputGroupText>답변</CInputGroupText>
+     <CFormTextarea aria-label="content"></CFormTextarea>
+    </CInputGroup>
+    <br></br>
+    <CFormSwitch size="xl" label="답변완료" id="mission_status"/>
+    <br></br>
 
        </CModalBody>
        <CModalFooter>
@@ -106,7 +77,8 @@ import {
        </CModalFooter>
      </CModal>
    </>
+
      );
  }
  
- export default PundingModify;
+ export default QnaModify;

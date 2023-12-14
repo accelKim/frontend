@@ -6,10 +6,10 @@ import { BrowserRouter, Route ,Routes} from 'react-router-dom';
 import Layout from './component/Layout';
 import MissionListLayout from './mission/MissionListLayout';
 import MssionDetailLayout from './mission/MssionDetailLayout';
-import GatheringDetail from './gathering/GatheringDetail';
-import GatheringAdd from './gathering/GatheringAdd';
-import GatheringList from './gathering/GatheringList';
-import GatheringUpdate from './gathering/GatheringUpdate';
+import GatheringDetailLayout from './gathering/GatheringDetailLayout';
+import GatheringAddLayout from './gathering/GatheringAddLayout';
+import GatheringListLayout from './gathering/GatheringListLayout';
+import GatheringUpdateLayout from './gathering/GatheringUpdateLayout';
 import ErrorPage from './errorpage/ErrorPage';
 import DefaultLayout from './admin/layout/DefaultLayout';
 import './admin/scss/style.scss'
@@ -21,10 +21,10 @@ function App() {
         <Route exact path='/' element={<Layout></Layout>}></Route>
           <Route path='/mission' element={<MissionListLayout />} />
           <Route path='/mission/detail' element={<MssionDetailLayout />} />
-          <Route path='/gathering' element={<GatheringList />} />
-          <Route path='/gathering/detail' element={<GatheringDetail />} />
-          <Route path='/gathering/update' element={<GatheringUpdate />} />
-          <Route path='/gathering/add' element={<GatheringAdd />} />
+          <Route path='/gathering' element={<GatheringListLayout />} />
+          <Route path='/gathering/detail' element={<GatheringDetailLayout />} />
+          <Route path='/gathering/update' element={<GatheringUpdateLayout />} />
+          <Route path='/gathering/add' element={<GatheringAddLayout />} />
           <Route path='*' element={<ErrorPage />} />
           <Route path='/admin/*' element={<DefaultLayout />} />
         
