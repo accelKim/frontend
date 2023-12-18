@@ -11,6 +11,7 @@ import PundingComponent from "./pundingComponent";
   const scrollRef = useRef(null);
   const [isDrag, setIsDrag] = useState(false);
   const [startX, setStartX] = useState();
+  const [activeCategory, setActiveCategory] = useState(null);
 
   const onDragStart = (e) => {
     e.preventDefault();
@@ -57,6 +58,7 @@ import PundingComponent from "./pundingComponent";
 
     fetchData();
   }, []);
+
   return (
     <div className="home">
       <img
@@ -139,65 +141,32 @@ import PundingComponent from "./pundingComponent";
         <div className="banner-cover-3" />
       </div>
       <div className="text-wrapper-10">인기 펀딩 상품</div>
-      <div className="group-6">
-        <div className="overlap-3">
-          <img
-            className="free-icon-cube"
-            alt="Free icon cube"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-cube-359399-1.png"
-          />
-          <div className="text-wrapper-11">전체</div>
-        </div>
-        <div className="overlap-4">
-          <div className="text-wrapper-12">Best</div>
-          <img
-            className="free-icon-badge"
-            alt="Free icon badge"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-badge-5629363-1.png"
-          />
-        </div>
-        <div className="overlap-5">
-          <div className="rectangle-2" />
-          <div className="text-wrapper-13">패션 잡화</div>
-          <img
-            className="free-icon-fashion"
-            alt="Free icon fashion"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-fashion-1198307-1.png"
-          />
-        </div>
-        <div className="overlap-6">
-          <img
-            className="free-icon-electric"
-            alt="Free icon electric"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-electric-appliance-3362661-1.png"
-          />
-          <div className="text-wrapper-14">테크 가전</div>
-        </div>
-        <div className="overlap-7">
-          <img
-            className="icons"
-            alt="Icons"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/icons8--------64-1.png"
-          />
-          <div className="text-wrapper-15">푸드</div>
-        </div>
-        <div className="overlap-8">
-          <img
-            className="icons-2"
-            alt="Icons"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/icons8---64-1.png"
-          />
-          <div className="text-wrapper-16">기타</div>
-        </div>
-        <div className="overlap-9">
-          <img
-            className="free-icon-makeup"
-            alt="Free icon makeup"
-            src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/656fffff39fbdde4fdb84a78/img/free-icon-makeup-6106906-1.png"
-          />
-          <div className="text-wrapper-17">뷰티</div>
-        </div>
-      </div>
+      <Nav variant="phills" defaultActiveKey="#" className="nav-wrap">
+           <Nav.Item className="nav-box" >
+             <Nav.Link href="#" className="nav-text">전체</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+         
+             <Nav.Link eventKey="link-1" href="#"className="nav-text">베스트</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+           <Nav.Link eventKey="link-2" href="#"className="nav-text">패션잡화</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+           <Nav.Link eventKey="link-3" href="#"className="nav-text">테크가전</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+           <Nav.Link eventKey="link-4" href="#"className="nav-text">푸드</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+           <Nav.Link eventKey="link-5" href="#"className="nav-text">기타</Nav.Link>
+           </Nav.Item>
+           <Nav.Item className="nav-box">
+           <Nav.Link eventKey="link-6" href="#"className="nav-text">뷰티</Nav.Link>
+           </Nav.Item>
+           
+
+         </Nav>
       <img
         className="line-2"
         alt="Line"

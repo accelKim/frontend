@@ -4,14 +4,15 @@ import { useState , useEffect} from "react";
 import { CSmartTable } from "@coreui/react-pro";
 import { CAvatar, CBadge, CButton,CCollapse, CCardBody} from "@coreui/react-pro";
 import UserModify from "./UserModify";
+import axios from "axios";
 
 
 const Users = () => {
     const [details, setDetails] = useState([])
-    const [visible, setVisible] = useState(false)
+    const [users, setUsers] = useState(false)
     const columns = [
       {
-        key: 'avatar',
+        key: 'profile',
         label: '',
         filter: false,
         sorter: false,
@@ -29,7 +30,8 @@ const Users = () => {
         key : 'email'
       },
       { 
-        key: 'role',
+        key: 'isadmin',
+        label : 'role',
         _style: { width: '20%' }
       },
       {
@@ -45,158 +47,49 @@ const Users = () => {
         sorter: false,
       },
     ]
-    const usersData = [
-      {
-        id: 1,
-        name: 'Samppa Nori',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-        address : '경기도 용인시 기흥구 마북동',
-        role: 'Member',
-        status: 'Active',
-        email : 'asd@naver.com',
-        point : 1000,
-      },
-      {
-        id: 2,
-        name: 'Estavan Lykos',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-       address : '경기도 용인시 기흥구 마북동',
-        role: 'Staff',
-        status: 'Banned',
-        email : 'asd@naver.com',
-        point : 100,
-      },
-      {
-        id: 3,
-        name: 'Chetan Mohamed',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-       address : '경기도 용인시 기흥구 마북동',
-        role: 'Admin',
-        email : 'asd@naver.com',
-        status: 'Inactive',
-        point : 100,
-       
-      },
-      {
-        id: 4,
-        name: 'Derick Maximinus',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-       address : '경기도 용인시 기흥구 마북동',
-        role: 'Member',
-        email : 'asd@naver.com',
-        status: 'Pending',
-        point : 1000,
-      },
-      {
-        id: 5,
-        name: 'Friderik Dávid',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-        address : '경기도 용인시 기흥구 마북동',
-        role: 'Staff',
-        email : 'asd@naver.com',
-        status: 'Active',
-        point : 90000,
-      },
-      { 
-        id: 6,
-        name: 'Yiorgos Avraamu',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-        address : '경상북도',
-        role: 'Member',
-        email : 'asd@naver.com',
-        status: 'Active',
-        point : 19000,
-      },
-      {
-        id: 7,
-        name: 'Avram Tarasios',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-       address : '전라남도 광주',
-        role: 'Staff',
-        email : 'asd@naver.com', 
-        point : 10900,
-      },
-      {
-        id: 8,
-        name: 'Quintin Ed',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-       address : '경기도 용인시 기흥구 마북동',
-        role: 'Admin',
-        email : 'asd@naver.com',
-        status: 'Inactive',
-        point : 10090,
-      },
-      { 
-        id: 9,
-        name: 'Enéas Kwadwo',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-       address : '경기도 용인시 기흥구 마북동',
-        role: 'Member',
-        email : 'asd@naver.com',
-        status: 'Pending',
-        point : 10009,
-      },
-      { 
-        id: 10,
-        name: 'Agapetus Tadeáš',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-        address : '인천 부평',
-        role: 'Staff',
-        email : 'asd@naver.com',
-        status: 'Active',
-        point : 10000,
-      },
-      { 
-        id: 11,
-        name: 'Carwyn Fachtna',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-        address : '경기도 용인시 기흥구 마북동',
-        role: 'Member',
-        email : 'asd@naver.com',
-        status: 'Active',
-        point : 10000,
-      },
-      {
-        id: 12,
-        name: 'Nehemiah Tatius',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-       address : '부산시 광안리',
-        role: 'Staff',
-        email : 'asd@naver.com',
-        status: 'Banned',
-        point : 10000,
-      },
-      {
-        id: 13,
-        name: 'Ebbe Gemariah',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-       address : '강원도 철원',
-        role: 'Admin',
-        email : 'asd@naver.com',
-        status: 'Inactive',
-        point : 10000,
-      },
-      {
-        id: 14,
-        name: 'Eustorgios Amulius',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-       address : '경기도 용인시 기흥구 마북동',
-        role: 'Member',
-        email : 'asd@naver.com',
-        status: 'Pending',
-        point : 10000,
-      },
-      {
-        id: 15,
-        name: '김원호',
-        avatar: 'https://i.postimg.cc/mgh0tq1x/mococo.jpg',
-        address : '서울시 강남구',
-        role: 'Staff',
-        email : 'asd@naver.com',
-        status: 'Active',
-        point : 10000,
-      },
-    ]
+    
+    useEffect(() => {
+      // 컴포넌트가 마운트될 때 한 번 데이터를 가져옴
+      fetchUser();
+    }, []);
+  
+    const fetchUser = async () => {
+      try {
+        // 서버에서 공지사항 데이터를 가져옴
+        const response = await axios.get('http://localhost:8080/api/users');
+        setUsers(response.data);
+      } catch (error) {
+        console.error('공지사항 데이터를 가져오는 중 오류 발생:', error);
+      }
+    };
+  
+    const handleUpdateUser = () => {
+      // 데이터가 수정되면 다시 가져옴
+      fetchUser();
+    };
+  
+  
+    const deleteUser = async (userId) => {
+      try {
+        // DELETE 요청: 사용자 삭제
+        await axios.delete(`http://localhost:8080/api/users/${userId}`);
+        // 삭제된 사용자를 제외한 나머지 사용자를 users 상태 업데이트
+        setUsers(users.filter(user => user.user_id !== userId));
+      } catch (error) {
+        console.error('사용자 삭제 중 오류 발생:', error);
+      }
+    };
+
+    const handleDeleteClick = (userId) => {
+      // 삭제 전에 사용자에게 확인 메시지 표시
+      const confirmDelete = window.confirm('정말 삭제하시겠습니까?');
+    
+      if (confirmDelete) {
+        // 사용자가 확인을 눌렀을 때만 삭제 동작 실행
+        deleteUser(userId);
+      }
+    };
+
     const getBadge = (status) => {
       switch (status) {
         case 'Active':
@@ -223,14 +116,14 @@ const Users = () => {
     }
     return (
       <CSmartTable
-        activePage={2}
+        activePage={1}
         cleaner
         clickableRows
         columns={columns}
         columnFilter
         columnSorter
         footer
-        items={usersData}
+        items={users}
         itemsPerPageSelect
         itemsPerPage={5}
         
@@ -266,22 +159,23 @@ const Users = () => {
                   shape="square"
                   size="sm"
                   onClick={() => {
-                    toggleDetails(item.id)
+                    toggleDetails(item.user_id)
                   }}
                 >
-                  {details.includes(item.id) ? 'Hide' : 'Show'}
+                  {details.includes(item.user_id) ? 'Hide' : 'Show'}
                 </CButton>
               </td>
             )
           },
           details: (item) => {
             return (
-              <CCollapse visible={details.includes(item.id)}>
+              <CCollapse visible={details.includes(item.user_id)}>
                 <CCardBody className="p-3">
                   <h4>{item.name}</h4>
                   <p className="text-muted">주소 : {item.address}</p>
-                  <UserModify />
-                  <CButton size="sm" color="danger" className="ml-1" style={{color:'white'}}>
+                  <UserModify userId={item.user_id} onUpdate={handleUpdateUser}/>
+                  <CButton size="sm" color="danger" className="ml-1" style={{color:'white'}}
+                   onClick={() => handleDeleteClick(item.user_id)}>
                     삭제
                   </CButton>
                 </CCardBody>

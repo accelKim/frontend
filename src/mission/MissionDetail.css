@@ -1,26 +1,21 @@
 .mission-detail-index {
-    align-items: center;
     background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: relative;
     transform: scale(0.75);
-    margin:  auto;
+    margin: 0 auto;
     height: 0;
-    width: 1440px;
+    width: fit-content;
     margin-bottom: 1300px;
-    
+    align-items: center;
+    display: contents;
   }
   
   .mission-detail-index .mission-detail-start {
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
     flex: 0 0 auto;
-    flex-direction: column;
     gap: 42px;
     position: relative;
-    width: 1040px;
+    width: fit-content;
   }
   
 
@@ -28,14 +23,14 @@
   .mission-detail-index .mission-detail-start-2 {
     height: 230px;
     position: a;
-    width: 1040px;
+    width: fit-content;
     margin: auto;
    
   }
   
   .mission-detail-index .mission-detail-start-wrapper {
     align-items: flex-start;
-    display: inline-flex;
+    display: flex;
     gap: 10px;
     left: 39px;
     position: absolute;
@@ -78,24 +73,15 @@
   }
   
   .mission-detail-index .mission-detail-title {
-    align-items: flex-start;
     background-color: #ffffff;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
+    width: fit-content;
     gap: 10px;
-    padding: 50px 110px;
+    padding: 50px;
+    margin: 0 auto;
     position: relative;
   }
   
-  .mission-detail-index .mission-detail-title-2 {
-    align-items: flex-start;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 14px;
-    position: relative;
-  }
+ 
   
   .mission-detail-index .mission-detail-title-3 {
     color: #000000;
@@ -115,7 +101,7 @@
     height: 5px;
     object-fit: cover;
     position: relative;
-    width: 1240px;
+    width: fit-content;
   }
   
   .mission-detail-index .mission-detail-main {
@@ -467,34 +453,6 @@
     position: relative;
   }
   
-  .mission-detail-index .footer-wrap {
-    align-items: center;
-    display: flex;
-    height: 279px;
-    justify-content: center;
-    position: relative;
-    width: 1440px;
-  }
-  
-  .mission-detail-index .logo-wrap {
-    align-items: center;
-    display: flex;
-    height: 279px;
-    justify-content: center;
-    position: relative;
-    width: 390px;
-  }
-  
-  .mission-detail-index .menu-wrap {
-    align-items: center;
-    display: flex;
-    gap: 40px;
-    height: 279px;
-    justify-content: center;
-    padding: 126px 0px;
-    position: relative;
-    width: 650px;
-  }
   
   .mission-detail-index .text-wrapper-3 {
     color: #000000;

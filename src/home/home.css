@@ -409,6 +409,20 @@
   }
   
   .home .overlap-3 {
+    border: 1px solid;
+    border-color: #03c75a;
+    background-color: white;
+    border-radius: 15px;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 70px;
+  }
+
+  .home .overlap-3.active {
+    border: 1px solid;
+    border-color: #03c75a;
     background-color: #03c75a;
     border-radius: 15px;
     height: 70px;
@@ -428,7 +442,7 @@
   }
   
   .home .text-wrapper-11 {
-    color: #ffffff;
+    color: #000000;
     font-family: "Poppins", Helvetica;
     font-size: 14px;
     font-weight: 400;

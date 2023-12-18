@@ -19,6 +19,9 @@ const MssionDetailLayout = () => {
     </div>
    
   )
+  
 }
+
+
 
 export default MssionDetailLayout;

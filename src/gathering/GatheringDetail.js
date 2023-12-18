@@ -81,6 +81,11 @@ function GatheringDetail() {
                                 src="https://cdn.animaapp.com/projects/6560b21274de9042f7d947f4/releases/656794b954eecaa3161d736b/img/nature-3289812-1920-2.png"
                             />
                             <div className="detail-main-writer">
+                            <img
+                        className="profile-icon"
+                        alt="Profile icon"
+                        src="https://cdn.animaapp.com/projects/6560b21274de9042f7d947f4/releases/656794b954eecaa3161d736b/img/profile-icon.svg"
+                    />
                                 <div className="detail-writer">{gathering && gathering.creatorName}</div>
                                 <div className="detail-title">{gathering ? gathering.title : "Loading..."}</div>
                             </div>
@@ -157,11 +162,6 @@ function GatheringDetail() {
                             </div>
                         </div>
                     </div>
-                    <img
-                        className="profile-icon"
-                        alt="Profile icon"
-                        src="https://cdn.animaapp.com/projects/6560b21274de9042f7d947f4/releases/656794b954eecaa3161d736b/img/profile-icon.svg"
-                    />
                 </div>
             </div>
         </div>
