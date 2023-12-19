@@ -19,10 +19,22 @@ const _nav = [
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
-    component: CNavItem,
+    component: CNavGroup,
     name: '환경 보호 미션 관리',
     to: '/admin/mission',
-    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilCursor} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: '미션 관리',
+        to: '/admin/mission/mission',
+      },
+      {
+        component: CNavItem,
+        name: '사용자 미션 관리',
+        to: '/admin/mission/user',
+      },
+    ],
   },
   {
     component: CNavItem,

@@ -3,7 +3,7 @@ import React from "react";
 import { useState, useRef} from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-// import Post from "../../components/Post";
+import Post from "./Post/Post";
 
 function GatheringAdd() {
 
@@ -113,10 +113,11 @@ function GatheringAdd() {
                             <div className="text-wrapper-2">사진등록</div>
                             <input type="file" className="img" />
                             <img  alt="preview" className="img-preview" />
+                           
                             <div className="text-wrapper-2">모임 위치</div>
                             <div className="zipcode-button-wrap">
-                                <input type="text" className="zonecode"  />
-                                 
+                                <input type="text" className="zonecode"  placeholder="우편번호" readOnly />
+                                <Post />    
                             </div>
                             {/* <input type="text" className="location" onChange={handleLocationChange}/> */}
                             <input type="text" className="full-address" />

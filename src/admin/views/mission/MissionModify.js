@@ -8,7 +8,7 @@ import {
     CInputGroup,
     CInputGroupText,
     CFormInput,
-    CFormSwitch,
+    CFormSelect,
     CFormTextarea
   } from '@coreui/react'
  import React from 'react'
@@ -25,6 +25,8 @@ import {
       point: '',
       status: '',
  });
+
+
  useEffect(() => {
   // 공지사항 데이터를 가져오기
   fetchMissionData();
@@ -34,6 +36,7 @@ const fetchMissionData = async () => {
   try {
     // 서버에서 공지사항 데이터 가져오기
     const response = await axios.get(`http://localhost:8080/api/mission/${missionId}`);
+    
     // 이전 값으로 초기화
     setFormData({
       title: response.data.title || '',     // 이전 값이 없으면 빈 문자열
@@ -41,6 +44,8 @@ const fetchMissionData = async () => {
       image: response.data.image || '', // 이전 값이 없으면 빈 문자열
       point: response.data.point || '', // 이전 값이 없으면 빈 문자열
       status: response.data.status || '',
+      modify_at: response.data.modify_at || '',
+      
     });
   } catch (error) {
     console.error('공지사항 데이터를 가져오는 중 오류 발생:', error);
@@ -106,9 +111,17 @@ const handleUpdate = async () => {
    value={formData.point} name='point' onChange={handleInputChange}/>
  </CInputGroup>
 
- <CFormSwitch size="xl" label="미션 활성화" id="mission_status"
- value={formData.status} name='status' onChange={handleInputChange}/>
- 
+ <CFormSelect 
+  aria-label="Default select example"
+  options={[
+    '상태를 설정해주세요',
+    { label: '대기', value: '0' },
+    { label: '진행', value: '1' },
+    { label: '종료', value: '2'}
+  ]}
+  value={formData.status} name='status' onChange={handleInputChange}
+/>
+
        </CModalBody>
        <CModalFooter>
          <CButton color="secondary" onClick={() => setVisible(false)}>

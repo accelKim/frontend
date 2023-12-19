@@ -4,6 +4,7 @@ import { useState , useEffect} from "react";
 import { CSmartTable } from "@coreui/react-pro";
 import { CAvatar, CBadge, CButton,CCollapse, CCardBody } from "@coreui/react-pro";
 import MissionModify from "./MissionModify";
+import MissionAdd from "./MissionAdd";
 import axios from "axios";
 
 
@@ -37,6 +38,10 @@ const Missions = () => {
       {
         key: 'point',
         label: 'Point',
+        _style: { width: '20%' },
+      },
+      {
+        key: 'status',
         _style: { width: '20%' },
       },
       {
@@ -92,18 +97,29 @@ const Missions = () => {
     
     const getBadge = (status) => {
       switch (status) {
-        case 'Active':
-          return 'success'
-        case 'Inactive':
-          return 'secondary'
-        case 'Pending':
-          return 'warning'
-        case 'Banned':
-          return 'danger'
+        case 0:
+          return 'secondary'; // 대기중 - 회색
+        case 1:
+          return 'success';   // 수락완료 - 초록색
+        case 2:
+          return 'danger';    // 반려 - 빨간색
         default:
-          return 'primary'
+          return 'primary';    // 기본값 설정 (필요에 따라 변경 가능)
       }
-    }
+    };
+
+    const getBadgeText = (status) => {
+      switch (status) {
+        case 0:
+          return '대기중';
+        case 1:
+          return '진행중';
+        case 2:
+          return '종료';
+        default:
+          return '알 수 없음';
+      }
+    };
     const toggleDetails = (index) => {
       const position = details.indexOf(index)
       let newDetails = details.slice()
@@ -115,6 +131,8 @@ const Missions = () => {
       setDetails(newDetails)
     }
     return (
+      <div>
+       
       <CSmartTable
         activePage={2}
         cleaner
@@ -143,6 +161,11 @@ const Missions = () => {
           image: (item) => (
             <td>
               <CAvatar src={item.image}></CAvatar>
+            </td>
+          ),
+          status: (item) => (
+            <td>
+               <CBadge color={getBadge(item.status)}>{getBadgeText(item.status)}</CBadge>
             </td>
           ),
           show_details: (item) => {
@@ -191,6 +214,8 @@ const Missions = () => {
           className: 'align-middle'
         }}
       />
+      <MissionAdd onUpdate={handleUpdateMission}/>
+      </div>
     );
 }
 

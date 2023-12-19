@@ -56,6 +56,9 @@ const fetchQnaData = async () => {
       category: response.data.category || '', // 이전 값이 없으면 빈 문자열
       start : response.data.start || '',
       end : response.data.end || '',
+      colleting : response.data.colleting || '',
+      likes : response.data.likes || '',
+      modified_at : response.data.modified_at || '',
     });
   } catch (error) {
     console.error('공지사항 데이터를 가져오는 중 오류 발생:', error);
@@ -132,23 +135,26 @@ const handleUpdate = async () => {
  />
  <br></br>
  <br></br>
+ <CFormSelect 
+  aria-label="Default select example"
+  options={[
+    '펀딩상태',
+    { label: '등록대기중', value: '0' },
+    { label: '진행중', value: '1' },
+    { label: '종료', value: '2'}
+  ]}
+  value={formData.status} name='status' onChange={handleInputChange}/>
  
- <CFormSwitch
-  size="xl"
-  label="펀딩 상태"
-  id="mission_status"
-  value={formData.status ? "on" : "off"} // true일 때 "on", false일 때 "off"
-  name='status'
-  onChange={handleInputChange}
-/>
  <br></br>
  <CFormSelect 
   aria-label="Default select example"
   options={[
     '카테고리',
-    { label: 'One', value: '1' },
-    { label: 'Two', value: '2' },
-    { label: 'Three', value: '3', disabled: true }
+    { label: '패션잡화', value: '0' },
+    { label: '테크가전', value: '1' },
+    { label: '푸드', value: '2' },
+    { label: '기타', value: '3' },
+    { label: '뷰티', value: '4' },
   ]}
   value={formData.category} name='category' onChange={handleInputChange}/>
 <br></br>
