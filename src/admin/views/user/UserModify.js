@@ -110,8 +110,8 @@ const handleUpdate = async () => {
   aria-label="Role"
   options={[
     '-',
-    { label: '유저', value: '0' },
-    { label: '관리자', value: '1' },
+    { label: '유저', value: 'false' },
+    { label: '관리자', value: 'true' },
   ]}
   value={formData.isadmin} name='isadmin' onChange={handleInputChange}
 />

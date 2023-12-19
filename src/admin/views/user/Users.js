@@ -90,20 +90,27 @@ const Users = () => {
       }
     };
 
-    const getBadge = (status) => {
-      switch (status) {
-        case 'Active':
-          return 'success'
-        case 'Inactive':
-          return 'secondary'
-        case 'Pending':
-          return 'warning'
-        case 'Banned':
-          return 'danger'
+    const getBadge = (isadmin) => {
+      switch (isadmin) {
+        case false:
+          return 'primary'; // 대기중 - 회색
+        case true:
+          return 'success';   // 수락완료 - 초록색
         default:
-          return 'primary'
+          return 'secondary';    // 기본값 설정 (필요에 따라 변경 가능)
       }
-    }
+    };
+
+    const getBadgeText = (isadmin) => {
+      switch (isadmin) {
+        case false:
+          return '유저';
+        case true:
+          return '관리자';
+        default:
+          return '알 수 없음';
+      }
+    };
     const toggleDetails = (index) => {
       const position = details.indexOf(index)
       let newDetails = details.slice()
@@ -145,9 +152,9 @@ const Users = () => {
               <CAvatar src={item.avatar}></CAvatar>
             </td>
           ),
-          status: (item) => (
+          isadmin: (item) => (
             <td>
-              <CBadge color={getBadge(item.status)}>{item.status}</CBadge>
+               <CBadge color={getBadge(item.isadmin)}>{getBadgeText(item.isadmin)}</CBadge>
             </td>
           ),
           show_details: (item) => {

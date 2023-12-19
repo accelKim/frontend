@@ -25,7 +25,8 @@ import {
       image: '',
       category: '',
       content2: '',
-      status: '',
+      status: false,
+      modify_at: new Date().toISOString().split('T')[0],
  });
 
  useEffect(() => {
@@ -43,8 +44,9 @@ const fetchQnaData = async () => {
       content: response.data.content || '',
       image: response.data.image || '', // 이전 값이 없으면 빈 문자열
       content2: response.data.content2 || '', // 이전 값이 없으면 빈 문자열
-      status: response.data.status || '',
+      status: response.data.status || false,
       category: response.data.category || '', // 이전 값이 없으면 빈 문자열
+      modify_at: new Date().toISOString().split('T')[0], 
     });
   } catch (error) {
     console.error('공지사항 데이터를 가져오는 중 오류 발생:', error);
@@ -114,7 +116,7 @@ const handleUpdate = async () => {
     '카테고리',
     { label: 'One', value: '1' },
     { label: 'Two', value: '2' },
-    { label: 'Three', value: '3', disabled: true }
+    { label: 'Three', value: '3'}
   ]}
   name='category'
   value={formData.category}
@@ -127,7 +129,18 @@ const handleUpdate = async () => {
      <CFormTextarea aria-label="content" name='content2' value={formData.content2} onChange={handleInputChange}></CFormTextarea>
     </CInputGroup>
     <br></br>
-    <CFormSwitch size="xl" label="답변완료" id="mission_status"/>
+    <CFormSelect 
+  aria-label="Default select example"
+  options={[
+    '답변여부',
+    { label: '대기중', value: '0' },
+    { label: '확인중', value: '1' },
+    { label: '답변완료', value: '2'}
+  ]}
+  name='status'
+  value={formData.status}
+  onChange={handleInputChange}
+/>
     <br></br>
 
        </CModalBody>

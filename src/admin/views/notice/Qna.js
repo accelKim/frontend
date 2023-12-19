@@ -94,21 +94,32 @@ const Qna = () => {
         deleteQna(qnaId);
       }
     };
-
     const getBadge = (status) => {
       switch (status) {
-        case 'Active':
-          return 'success'
-        case 'Inactive':
-          return 'secondary'
-        case 'Pending':
-          return 'warning'
-        case 'Banned':
-          return 'danger'
+        case 0:
+          return 'secondary'; // 대기중 - 회색
+        case 1:
+          return 'primary';   // 수락완료 - 초록색
+        case 2:
+          return 'success';    // 반려 - 빨간색
         default:
-          return 'primary'
+          return 'danger';    // 기본값 설정 (필요에 따라 변경 가능)
       }
-    }
+    };
+
+    const getBadgeText = (status) => {
+      switch (status) {
+        case 0:
+          return '대기중';
+        case 1:
+          return '확인중';
+        case 2:
+          return '답변완료';
+        default:
+          return '알 수 없음';
+      }
+    };
+
     const toggleDetails = (index) => {
       const position = details.indexOf(index)
       let newDetails = details.slice()
@@ -148,6 +159,11 @@ const Qna = () => {
           image: (item) => (
             <td>
               <CAvatar src={item.image}></CAvatar>
+            </td>
+          ),
+          status: (item) => (
+            <td>
+               <CBadge color={getBadge(item.status)}>{getBadgeText(item.status)}</CBadge>
             </td>
           ),
           show_details: (item) => {
