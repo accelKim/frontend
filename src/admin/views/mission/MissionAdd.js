@@ -14,7 +14,8 @@ import {
  import React from 'react'
  import axios from 'axios'
  import { useState} from 'react'
- 
+ import DatePicker from "react-datepicker";
+ import "react-datepicker/dist/react-datepicker.css";
  
  const MissionAdd =  ({onUpdate}) => {
      const [visible, setVisible] = useState(false)
@@ -24,8 +25,10 @@ import {
         image :'',
         point :'',
         status: '',
-        title: ''
+        title: '',
          });
+         const [startDate, setStartDate] = useState(new Date());
+         const [endDate, setEndDate] = useState(new Date());
 
 
 
@@ -94,6 +97,26 @@ const handleInputChange = (e) => {
 
  <CFormSwitch size="xl" label="미션 활성화" id="mission_status"
  value={formData.status} name='status' onChange={handleInputChange}/>
+
+
+<DatePicker
+  selected={startDate}
+  onChange={(date) => {
+    setStartDate(date); // 선택된 날짜를 startDate에 업데이트
+    handleInputChange({ target: { name: 'start', value: date } }); // formData 업데이트
+  }}
+/>
+
+
+ <br></br>
+ <br></br>
+ <DatePicker
+  selected={endDate}
+  onChange={(date) => {
+    setEndDate(date); // 선택된 날짜를 endDate에 업데이트
+    handleInputChange({ target: { name: 'end', value: date } }); // formData 업데이트
+  }}
+/>
  
        </CModalBody>
        <CModalFooter>

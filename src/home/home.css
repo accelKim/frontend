@@ -150,41 +150,13 @@
     font-family: "Poppins", Helvetica;
     font-size: 20px;
     font-weight: 300;
-    
     letter-spacing: 0;
-    
     position: absolute;
     text-align: center;
     top: 2px;
     width: 750px;
   }
   
-  .home .free-icon-heart {
-    height: 35px;
-    left: 124px;
-    object-fit: cover;
-    position: absolute;
-    top: 3px;
-    width: 35px;
-  }
-  
-  .home .free-icon-employee {
-    height: 35px;
-    left: 376px;
-    object-fit: cover;
-    position: absolute;
-    top: 3px;
-    width: 35px;
-  }
-  
-  .home .free-icon-goal {
-    height: 35px;
-    left: 610px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 35px;
-  }
   
   .home .img {
     height: 5px;
@@ -246,95 +218,17 @@
     width: 627px;
   }
   
-  .home .free-icon-volunteer {
-    height: 26px;
-    left: 302px;
-    object-fit: cover;
-    position: absolute;
-    top: 4px;
-    width: 29px;
-  }
+
   
-  .home .gathering-category-1 {
-    color: #000000;
-    font-family: "Poppins", Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 4px;
-  }
+
   
-  .home .free-icon-waste {
-    height: 30px;
-    left: 100px;
-    object-fit: cover;
-    position: absolute;
-    top: 4px;
-    width: 43px;
-  }
-  
-  .home .gathering-category-2 {
-    color: #000000;
-    font-family: "Poppins", Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    left: 172px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 3px;
-    width: 103px;
-  }
-  
-  .home .gathering-category-3 {
-    color: #000000;
-    font-family: "Poppins", Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    left: 341px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 4px;
-    width: 130px;
-  }
-  
+
   .home .overlap-2 {
     height: 35px;
     left: 485px;
     position: absolute;
     top: 0;
     width: 134px;
-  }
-  
-  .home .free-icon-volunteer-2 {
-    height: 35px;
-    left: 0;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 35px;
-  }
-  
-  .home .gathering-category-4 {
-    color: #000000;
-    font-family: "Poppins", Helvetica;
-    font-size: 20px;
-    font-weight: 300;
-    left: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 5px;
-    white-space: nowrap;
-    width: 150px;
   }
   
   .home .group-4 {
@@ -432,14 +326,7 @@
     width: 70px;
   }
   
-  .home .free-icon-cube {
-    height: 35px;
-    left: 17px;
-    object-fit: cover;
-    position: absolute;
-    top: 7px;
-    width: 35px;
-  }
+ 
   
   .home .text-wrapper-11 {
     color: #000000;
@@ -481,14 +368,7 @@
     width: 50px;
   }
   
-  .home .free-icon-badge {
-    height: 37px;
-    left: 16px;
-    object-fit: cover;
-    position: absolute;
-    top: 6px;
-    width: 35px;
-  }
+
   
   .home .overlap-5 {
     height: 70px;
@@ -524,15 +404,7 @@
     width: 89px;
   }
   
-  .home .free-icon-fashion {
-    height: 35px;
-    left: 27px;
-    object-fit: cover;
-    position: absolute;
-    top: 9px;
-    width: 35px;
-  }
-  
+
   .home .overlap-6 {
     background-color: #ffffff;
     border: 1px solid;
@@ -545,14 +417,7 @@
     width: 70px;
   }
   
-  .home .free-icon-electric {
-    height: 35px;
-    left: 18px;
-    object-fit: cover;
-    position: absolute;
-    top: 6px;
-    width: 35px;
-  }
+ 
   
   .home .text-wrapper-14 {
     color: #000000;
@@ -581,15 +446,7 @@
     width: 70px;
   }
   
-  .home .icons {
-    height: 35px;
-    left: 16px;
-    object-fit: cover;
-    position: absolute;
-    top: 6px;
-    width: 35px;
-  }
-  
+ 
   .home .text-wrapper-15 {
     color: #000000;
     font-family: "Poppins", Helvetica;
@@ -617,14 +474,7 @@
     width: 70px;
   }
   
-  .home .icons-2 {
-    height: 35px;
-    left: 16px;
-    object-fit: cover;
-    position: absolute;
-    top: 9px;
-    width: 35px;
-  }
+
   
   .home .text-wrapper-16 {
     color: #000000;
@@ -652,15 +502,7 @@
     width: 70px;
   }
   
-  .home .free-icon-makeup {
-    height: 35px;
-    left: 17px;
-    object-fit: cover;
-    position: absolute;
-    top: 11px;
-    width: 35px;
-  }
-  
+
   .home .text-wrapper-17 {
     color: #000000;
     font-family: "Poppins", Helvetica;
@@ -687,7 +529,6 @@
     overflow-x: scroll;
     position: relative;
     width: 1225px;
-    
   }
   .home .punding-scroll::-webkit-scrollbar{
     display:none;
@@ -730,7 +571,7 @@
     width: 249px;
   }
   
-  .home .btn {
+  .home .pubding_button {
     all: unset;
     box-sizing: border-box;
     height: 40px;
@@ -876,17 +717,7 @@
     width: 282px;
   }
   
-  .home .card {
-    background-color: #ffffff;
-    border: 1px solid;
-    border-color: #000000;
-    border-radius: 18px;
-    height: 433px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 282px;
-  }
+
   
   .home .element-4 {
     height: 187px;
@@ -956,51 +787,10 @@
     width: 249px;
   }
   
-  .home .mission-frame {
-    align-items: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 20px;
-    max-height: 1200px;
-    max-width: 1220px;
-    position: relative;
-    width: 100%;
-    
-  }
+
   
-  .home .mission-frame .mission-box {
-    background-color: #ffffff;
-    border: 1px solid;
-    border-color: #000000;
-    border-radius: 35px;
-    height: 284px;
-    position: relative;
-    width: 284px;
-    
-  }
   
-  .home .mission-frame .element {
-    height: 194px;
-    left: 14px;
-    object-fit: cover;
-    position: absolute;
-    top: 17px;
-    width: 251px;
-  }
-  
-  .home .mission-frame .text-wrapper {
-    color: #000000;
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-size: 24px;
-    font-weight: 600;
-    left: 26px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 230px;
-    width: 227px;
-  }
+
   .gathering {
     
     display: flex;

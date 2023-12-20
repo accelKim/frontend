@@ -3,7 +3,7 @@ import React  from "react";
 import axios from "axios";
 import Nav from 'react-bootstrap/Nav';
 import "./home.css";
-import MissionComponent from "./missionComponent";
+import MissionComponent2 from "./missionComponent2";
 import GatheringComponent from "./gatheringComponent";
 import PundingComponent from "./pundingComponent";
 
@@ -108,7 +108,7 @@ import PundingComponent from "./pundingComponent";
         alt="Line"
         src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/line-18.png"
       />
-      <MissionComponent />
+      <MissionComponent2 />
       <div className="frame-2">
       <div className="banner-2">
         <div className="banner-cover-2" />

@@ -32,7 +32,7 @@ const PundingComponent = () => {
           <div className={`punding-card`} key={index}>
             <div className="overlap-10">
               <img className="element-3" alt="Element" src={punding.image} />
-                <button className="btn">
+                <button className="pubding_button">
                     <div className="div-wrapper">
                      <div className="text-wrapper-18">후원하기</div>
                     </div>

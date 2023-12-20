@@ -45,6 +45,14 @@ const Missions = () => {
         _style: { width: '20%' },
       },
       {
+        key: 'start',
+        _style: { width: '20%' },
+      },
+      {
+        key: 'end',
+        _style: { width: '20%' },
+      },
+      {
         key: 'show_details',
         label: '',
         _style: { width: '1%' },

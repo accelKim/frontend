@@ -54,8 +54,8 @@ const fetchQnaData = async () => {
       image2: response.data.image2 || '', // 이전 값이 없으면 빈 문자열
       status: response.data.status || '',
       category: response.data.category || '', // 이전 값이 없으면 빈 문자열
-      start : response.data.start || '',
-      end : response.data.end || '',
+      start : response.data.startDate || '',
+      end : response.data.endDate || '',
       colleting : response.data.colleting || '',
       likes : response.data.likes || '',
       modified_at : response.data.modified_at || '',
@@ -76,7 +76,8 @@ const handleUpdate = async () => {
    
     onUpdate();
     setVisible(false);
-
+    console.log(startDate)
+    console.log(endDate)
   } catch (error) {
     console.error('공지사항 수정 중 오류 발생:', error);
   }
@@ -124,15 +125,25 @@ const handleUpdate = async () => {
      ></CFormTextarea>
     </CInputGroup>
  <br></br>
-  <DatePicker selected={startDate} onChange={(date) => setStartDate(date)}
-    value={formData.date} name='start'
-  />
+ <DatePicker
+  selected={startDate}
+  onChange={(date) => {
+    setStartDate(date); // 선택된 날짜를 startDate에 업데이트
+    handleInputChange({ target: { name: 'start', value: date } }); // formData 업데이트
+  }}
+/>
+
 
  <br></br>
  <br></br>
- <DatePicker selected={endDate} onChange={(date) => setEndDate(date)}
-  value={formData.date} name='end' 
- />
+ <DatePicker
+  selected={endDate}
+  onChange={(date) => {
+    setEndDate(date); // 선택된 날짜를 endDate에 업데이트
+    handleInputChange({ target: { name: 'end', value: date } }); // formData 업데이트
+  }}
+/>
+
  <br></br>
  <br></br>
  <CFormSelect 
