@@ -86,7 +86,7 @@ import PundingComponent from "./pundingComponent";
         src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/line-28.png"
       />
       <div className="banner">
-        <div className="banner-cover" />
+        <div className="banner_text">미션에 참여하시면 포인트를 흭득하여 리워드와 교환이 가능합니다</div>
       </div>
       <div className="misson-title">진행중인 미션</div>
         <Nav variant="phills" defaultActiveKey="#" className="nav-wrap">
@@ -109,10 +109,8 @@ import PundingComponent from "./pundingComponent";
         src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/line-18.png"
       />
       <MissionComponent2 />
-      <div className="frame-2">
       <div className="banner-2">
-        <div className="banner-cover-2" />
-      </div>
+      <div className="banner_text">마음이 맞는사람들과 함께 봉사모임을 진행해보세요</div>
       </div>
       <div className="gathering-title">봉사모임</div>
            <Nav variant="phills" defaultActiveKey="#" className="nav-wrap">
