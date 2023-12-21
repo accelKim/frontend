@@ -1,15 +1,31 @@
 { "notice" : [
   {"title" : "[점검안내] 지도 서비스 DB작업으로 인한 저장 기능 이용제한 안내 (11/28)"}
 ],
-  "mission" : [
-    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------8@2x.png", "text": "미션 1"},
-    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------6@2x.png", "text": "미션 2"},
-    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------7@2x.png", "text": "미션 3"},
-    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------3@2x.png", "text": "미션 4"},
-    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------4@2x.png", "text": "미션 5"},
-    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------2@2x.png", "text": "미션 6"},
-    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------1@2x.png", "text": "미션 7"},
-    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------5@2x.png", "text": "미션 8"}
+"mission" : [
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------8@2x.png", "text": "미션 1", "category" : 0},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------6@2x.png", "text": "미션 2", "category" : 0},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------7@2x.png", "text": "미션 3", "category" : 0},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------3@2x.png", "text": "미션 4", "category" : 0},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------4@2x.png", "text": "미션 5", "category" : 0},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------2@2x.png", "text": "미션 6", "category" : 0},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------1@2x.png", "text": "미션 7", "category" : 0},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------5@2x.png", "text": "미션 8", "category" : 0},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------8@2x.png", "text": "미션 9" , "category" : 1},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------6@2x.png", "text": "미션 10", "category" : 1},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------7@2x.png", "text": "미션 11", "category" : 1},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------3@2x.png", "text": "미션 12", "category" : 1},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------4@2x.png", "text": "미션 13", "category" : 1},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------2@2x.png", "text": "미션 14", "category" : 1},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------1@2x.png", "text": "미션 15", "category" : 1},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------5@2x.png", "text": "미션 16", "category" : 1},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------8@2x.png", "text": "미션 17", "category": 2},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------6@2x.png", "text": "미션 18", "category": 2},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------7@2x.png", "text": "미션 19", "category": 2},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------3@2x.png", "text": "미션 20", "category": 2},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------4@2x.png", "text": "미션 21", "category": 2},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------2@2x.png", "text": "미션 22", "category": 2},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------1@2x.png", "text": "미션 23", "category": 2},
+    {"image": "https://c.animaapp.com/sFe7NuY1/img/--------5@2x.png", "text": "미션 24", "category": 2}
   ],
   "gatheringInfo" : [
     {"userProfile": [
@@ -306,56 +322,8 @@
             "count": 1,
             "capacity": 10
         }
-    ],
-    "users" : [
-      {
-        "user_id" : 1,
-        "id": "dnjsgh",
-        "password" : "1234",
-        "name": "김수로",
-        "email" : " asd@naver.com",
-        "address" : "경기도 용인시 기흥구 마북동",
-        "isadmin" : true,
-        "profile" : "",
-        "create_at": "2023-12-13"
-      },
-      {
-        "user_id" : 2,
-        "id": "dnjsgh",
-        "password" : "1234",
-        "name": "김수로",
-        "email" : " asd@naver.com",
-        "address" : "경기도 용인시 기흥구 마북동",
-        "isadmin" : true,
-        "profile" : "",
-        "create_at": "2023-12-13"
-      },
-      {
-        "user_id" :3,
-        "id": "dnjsgh",
-        "password" : "1234",
-        "name": "김수로",
-        "email" : " asd@naver.com",
-        "address" : "경기도 용인시 기흥구 마북동",
-        "isadmin" : true,
-        "profile" : "",
-        "create_at": "2023-12-13"
-      },
-      {
-        "user_id" : 4,
-        "id": "dnjsgh",
-        "password" : "1234",
-        "name": "김수로",
-        "email" : " asd@naver.com",
-        "address" : "경기도 용인시 기흥구 마북동",
-        "isadmin" : true,
-        "profile" : "",
-        "create_at": "2023-12-13"
-      },
-      {
-        
-      }
     ]
+   
   }
  
 

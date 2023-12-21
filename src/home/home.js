@@ -11,7 +11,20 @@ import PundingComponent from "./pundingComponent";
   const scrollRef = useRef(null);
   const [isDrag, setIsDrag] = useState(false);
   const [startX, setStartX] = useState();
-  const [activeCategory, setActiveCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState('전체');
+  const [selectedCategory2, setSelectedCategory2] = useState('전체');
+  const [selectedCategory1, setSelectedCategory1] = useState('전체');
+
+  const handleNavItemClick = (category) => {
+    setSelectedCategory(category);
+  };
+  const handleNavItemClick1 = (category) => {
+    setSelectedCategory1(category);
+  };
+  const handleNavItemClick2 = (category) => {
+    setSelectedCategory2(category);
+  };
+
 
   const onDragStart = (e) => {
     e.preventDefault();
@@ -59,6 +72,7 @@ import PundingComponent from "./pundingComponent";
     fetchData();
   }, []);
 
+
   return (
     <div className="home">
       <img
@@ -89,42 +103,48 @@ import PundingComponent from "./pundingComponent";
         <div className="banner_text">미션에 참여하시면 포인트를 흭득하여 리워드와 교환이 가능합니다</div>
       </div>
       <div className="misson-title">진행중인 미션</div>
-        <Nav variant="phills" defaultActiveKey="#" className="nav-wrap">
-           <Nav.Item className="nav-box" >
-             <Nav.Link href="#" className="nav-text">전체</Nav.Link>
-           </Nav.Item>
-           <Nav.Item className="nav-box">
-             <Nav.Link eventKey="link-1" href="#"className="nav-text">참여형</Nav.Link>
-           </Nav.Item>
-           <Nav.Item className="nav-box">
-           <Nav.Link eventKey="link-2" href="#"className="nav-text">도전형</Nav.Link>
-           </Nav.Item>
-           <Nav.Item className="nav-box">
-           <Nav.Link eventKey="link-3" href="#"className="nav-text">활동형</Nav.Link>
-           </Nav.Item>
-         </Nav>
-      <img
+      <Nav variant="phills" defaultActiveKey="#" className="nav-wrap">
+        <Nav.Item className="nav-box">
+          <Nav.Link href="#" className="nav-text" onClick={() => handleNavItemClick('전체')}>전체</Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="nav-box">
+          <Nav.Link eventKey="link-1" href="#" className="nav-text" onClick={() => handleNavItemClick('참여형')}>참여형</Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="nav-box">
+          <Nav.Link eventKey="link-2" href="#" className="nav-text" onClick={() => handleNavItemClick('도전형')}>도전형</Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="nav-box">
+          <Nav.Link eventKey="link-3" href="#" className="nav-text" onClick={() => handleNavItemClick('활동형')}>활동형</Nav.Link>
+        </Nav.Item>
+      </Nav>
+ <img
         className="img"
         alt="Line"
         src="https://cdn.animaapp.com/projects/6566e67221a5f8ac6355e523/releases/657012a3157386e1edbc12b0/img/line-18.png"
       />
-      <MissionComponent2 />
+      {/* 내용 컴포넌트를 선택된 카테고리에 따라 렌더링 */}
+      {selectedCategory === '전체' && <MissionComponent2 />}
+      {selectedCategory === '참여형' && <MissionComponent2 category={0}/>}
+      {selectedCategory === '도전형' && <MissionComponent2 category={1}/>}
+      {selectedCategory === '활동형' && <MissionComponent2 category={2}/>}
+     
+   
       <div className="banner-2">
       <div className="banner_text">마음이 맞는사람들과 함께 봉사모임을 진행해보세요</div>
       </div>
       <div className="gathering-title">봉사모임</div>
            <Nav variant="phills" defaultActiveKey="#" className="nav-wrap">
            <Nav.Item className="nav-box" >
-             <Nav.Link href="#" className="nav-text">전체</Nav.Link>
+             <Nav.Link href="#" className="nav-text" onClick={() => handleNavItemClick1('전체')}>전체</Nav.Link>
            </Nav.Item>
            <Nav.Item className="nav-box">
-             <Nav.Link eventKey="link-1" href="#"className="nav-text">환경미화</Nav.Link>
+             <Nav.Link eventKey="link-1" href="#"className="nav-text" onClick={() => handleNavItemClick1('환경미화')}>환경미화</Nav.Link>
            </Nav.Item>
            <Nav.Item className="nav-box">
-           <Nav.Link eventKey="link-2" href="#"className="nav-text">재능기부</Nav.Link>
+           <Nav.Link eventKey="link-2" href="#"className="nav-text" onClick={() => handleNavItemClick1('재능기부')}>재능기부</Nav.Link>
            </Nav.Item>
            <Nav.Item className="nav-box">
-           <Nav.Link eventKey="link-3" href="#"className="nav-text">후원</Nav.Link>
+           <Nav.Link eventKey="link-3" href="#"className="nav-text" onClick={() => handleNavItemClick1('후원')}>후원</Nav.Link>
            </Nav.Item>
          </Nav>
       <img
@@ -134,6 +154,11 @@ import PundingComponent from "./pundingComponent";
       />
   
     <GatheringComponent />
+    {/* 내용 컴포넌트를 선택된 카테고리에 따라 렌더링 추후 백과 연결후 활성화 */}
+    {/* {selectedCategory === '전체' && <GatheringComponent />}
+      {selectedCategory === '참여형' && <GatheringComponent category={0}/>}
+      {selectedCategory === '도전형' && <GatheringComponent category={1}/>}
+      {selectedCategory === '활동형' && <GatheringComponent category={2}/>} */}
 
       <div className="banner-3">
         <div className="banner-cover-3" />
@@ -141,26 +166,26 @@ import PundingComponent from "./pundingComponent";
       <div className="text-wrapper-10">인기 펀딩 상품</div>
       <Nav variant="phills" defaultActiveKey="#" className="nav-wrap">
            <Nav.Item className="nav-box" >
-             <Nav.Link href="#" className="nav-text">전체</Nav.Link>
+             <Nav.Link href="#" className="nav-text" onClick={() => handleNavItemClick2('전체')}>전체</Nav.Link>
            </Nav.Item>
            <Nav.Item className="nav-box">
          
-             <Nav.Link eventKey="link-1" href="#"className="nav-text">베스트</Nav.Link>
+             <Nav.Link eventKey="link-1" href="#"className="nav-text"  onClick={() => handleNavItemClick2('베스트')}>베스트</Nav.Link>
            </Nav.Item>
            <Nav.Item className="nav-box">
-           <Nav.Link eventKey="link-2" href="#"className="nav-text">패션잡화</Nav.Link>
+           <Nav.Link eventKey="link-2" href="#"className="nav-text" onClick={() => handleNavItemClick2('패션잡화')}>패션잡화</Nav.Link>
            </Nav.Item>
            <Nav.Item className="nav-box">
-           <Nav.Link eventKey="link-3" href="#"className="nav-text">테크가전</Nav.Link>
+           <Nav.Link eventKey="link-3" href="#"className="nav-text" onClick={() => handleNavItemClick2('테크가전')}>테크가전</Nav.Link>
            </Nav.Item>
            <Nav.Item className="nav-box">
-           <Nav.Link eventKey="link-4" href="#"className="nav-text">푸드</Nav.Link>
+           <Nav.Link eventKey="link-4" href="#"className="nav-text" onClick={() => handleNavItemClick2('푸드')}>푸드</Nav.Link>
            </Nav.Item>
            <Nav.Item className="nav-box">
-           <Nav.Link eventKey="link-5" href="#"className="nav-text">기타</Nav.Link>
+           <Nav.Link eventKey="link-5" href="#"className="nav-text" onClick={() => handleNavItemClick2('기타')}>기타</Nav.Link>
            </Nav.Item>
            <Nav.Item className="nav-box">
-           <Nav.Link eventKey="link-6" href="#"className="nav-text">뷰티</Nav.Link>
+           <Nav.Link eventKey="link-6" href="#"className="nav-text" onClick={() => handleNavItemClick2('뷰티')}>뷰티</Nav.Link>
            </Nav.Item>
            
 
@@ -177,6 +202,11 @@ import PundingComponent from "./pundingComponent";
       onMouseLeave={onDragEnd}
       ref={scrollRef}>
           <PundingComponent />
+          {/* 내용 컴포넌트를 선택된 카테고리에 따라 렌더링 추후 백과 연결후 활성화 */}
+    {/* {selectedCategory === '전체' && <PundingComponent />}
+      {selectedCategory === '참여형' && <PundingComponent category={0}/>}
+      {selectedCategory === '도전형' && <PundingComponent category={1}/>}
+      {selectedCategory === '활동형' && <PundingComponent category={2}/>} */}
       </div>
     </div>
   );

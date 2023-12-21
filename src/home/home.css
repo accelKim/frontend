@@ -10,9 +10,11 @@
     width: 100%;
     margin: auto;
   }
+
+
   
   .home .main-banner {
-    height: 850px;
+    height: 450px;
     object-fit: cover;
     position: relative;
     width: 1440px;
@@ -980,38 +982,6 @@
     width: 164px;
   }
 
-  .home {
-    transform: scale(0.75);
-    height: 0;
-    margin-bottom: 3000px;
-   
-}
-@media (max-width:1235px) {
-  .home {
-    margin-bottom: 3700px;
-  }
-}
-@media (max-width:1135px) {
-  .home {
-    margin-bottom: 3850px;
-  }
-}
-
-@media (max-width:900px) {
-  .home {
-    margin-bottom: 4050px;
-  }
-}
-@media (max-width:800px) {
-  .home {
-    margin-bottom: 4150px;
-  }
-}
-@media (max-width:1235px) {
-  .gathering {
-    
-  }
-}
 
 .home .nav-text {
   color: #000000;
