@@ -12,7 +12,8 @@ import GatheringListLayout from './gathering/GatheringListLayout';
 import GatheringUpdateLayout from './gathering/GatheringUpdateLayout';
 import ErrorPage from './errorpage/ErrorPage';
 import DefaultLayout from './admin/layout/DefaultLayout';
-import './admin/scss/style.scss'
+import './admin/scss/style.scss';
+import MyMission from './mypage/MyMission';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route path='/gathering/add' element={<GatheringAddLayout />} />
           <Route path='*' element={<ErrorPage />} />
           <Route path='/admin/*' element={<DefaultLayout />} />
-        
+          <Route path='/mypage/mission' element={<MyMission />} />
       </Routes>
     </BrowserRouter>
   );
